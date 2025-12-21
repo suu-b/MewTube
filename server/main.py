@@ -1,4 +1,3 @@
-from http.client import HTTPException
 from fastapi import FastAPI
 from dotenv import load_dotenv
 import os
@@ -20,7 +19,7 @@ def read_root():
 def search_dummy():
     params = {
         "part": "snippet",
-        "q": "Philosophy of science, unsolicited advice", # a sample query
+        "q": "Philosophy of science, unsolicited advice",
         "type": "video",
         "maxResults": 20,
         "key": YT_KEY
