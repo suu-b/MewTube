@@ -1,6 +1,6 @@
 import logging
-from Candidate import Candidate 
-from youtube_search import YouTubeSearch
+from models.candidate import Candidate 
+from .youtube_search import YouTubeSearch
 import json
 import os
 from dotenv import load_dotenv
