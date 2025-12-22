@@ -1,4 +1,5 @@
 import logging
+from config.config import logger
 from models.candidate import Candidate 
 from .youtube_search import YouTubeSearch
 import json
@@ -9,17 +10,6 @@ from datetime import datetime
 load_dotenv()
 
 YT_KEY = os.getenv("YT_KEY")
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    handlers=[
-        logging.StreamHandler()
-    ]
-)
-
-logger = logging.getLogger(__name__)
 
 # Sample context
 CONTEXT = {
