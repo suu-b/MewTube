@@ -17,7 +17,7 @@ function App() {
         </div>
       </div>
       <div className="relative h-[45vh]">
-        <img src="/assets/banner.jpg" className="w-full h-full object-cover" />>
+        <img src="/assets/banner.jpg" className="w-full h-full object-cover" />
         Search
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex items-center px-12">
