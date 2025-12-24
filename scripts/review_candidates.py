@@ -1,5 +1,10 @@
-from config.config import logger
+from config.config import OUTPUT_DIR, logger
 from candidates_service.main import get_candidates
+import json
+from pathlib import Path
+import streamlit as st
+
+from models.candidate import Candidate
 
 def review_candidates(candidates):
     liked = []
@@ -32,7 +37,10 @@ def main():
     print()
     logger.info("Executing Script to train the initial model")
     logger.info("Collecting the candidates...")    
-    candidates = get_candidates()
+    candidates = []
+    with open(OUTPUT_DIR / f"pool_candidates_pool.jsonl", "r", encoding="utf-8") as f:
+        candidates = [Candidate.model_validate_json(line) for line in f]
+
     candidates_found = len(candidates)
     if(candidates_found == 0):
         logger.warning("No candidate found. Exiting...")
@@ -40,8 +48,9 @@ def main():
 
     logger.info("Collected %d candidates", candidates_found)
     logger.info("Starting Candidates Review.")
+    logger.info("Running streamlit app")
 
-    liked, disliked = review_candidates(candidates)
+    # liked, disliked = review_candidates(candidates)
     logger.info(
         "Review complete. Liked: %d | Disliked: %d",
         len(liked),
