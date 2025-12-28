@@ -9,13 +9,14 @@ load_dotenv()
 _isNonProd = os.getenv('IS_NON_PROD', 'true').lower() == 'true'
 
 # Shared Constants
+APP_NAME = "MewTube"
 LOGGING_LEVEL = logging.DEBUG if _isNonProd else logging.INFO
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = PROJECT_ROOT / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Shared Logger
-logger = logging.getLogger('mewtube')
+logger = logging.getLogger(APP_NAME)
 logger.setLevel(LOGGING_LEVEL)
 
 if not logger.handlers:
