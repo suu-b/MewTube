@@ -1,0 +1,236 @@
+[
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmxPclRsS3JkbWtR",
+    "title": "How did the Attention Mechanism start an AI frenzy? | LM3",
+    "description": "The attention mechanism is well known for its use in Transformers. But where does it come from? It's origins lie in fixing a strange problems of RNNs.\nSupport me on Patreon! https://patreon.com/vcubingx\nLanguage Modeling Playlist: https://youtube.com/playlist?list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc&si=IRBpmEtun0xX7X9_\n\n3blue1brown series on Transformers: https://youtu.be/wjZofJX0v4M\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/dl-visualization\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nSources (includes the entire series): https://docs.google.com/document/d/1e9dB6Q-A6z1d33w2m0_DrMS5EdbSunY2TPvZmZf41Gc/edit\nChapters\n0:00 Introduction\n0:22 Machine Translation\n2:01 Attention Mechanism\n8:04 Outro\n\nMusic (In Order):\nHelynt - Route 10\nHelynt - Bo-Omb Battlefield\nHelynt - Underwater\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nHelynt - Twinleaf Town\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-04-15T14:33:52Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/lOrTlKrdmkQ/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLnJUejZoYWRNMUxn",
+    "title": "Why Recurrent Neural Networks are cursed | LM2",
+    "description": "Neural language models, and an explanation of recurrent neural networks\nSupport me on Patreon! https://patreon.com/vcubingx\nLanguage Modeling Playlist: https://youtube.com/playlist?list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc&si=IRBpmEtun0xX7X9_\n\n3blue1brown series on Transformers: https://youtu.be/wjZofJX0v4M\nTraining Neural Networks: https://distill.pub/2020/grand-tour/\nChris Olah's LSTM Blog: https://colah.github.io/posts/2015-08-Understanding-LSTMs/\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/dl-visualization\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nSources (includes the entire series): https://docs.google.com/document/d/1e9dB6Q-A6z1d33w2m0_DrMS5EdbSunY2TPvZmZf41Gc/edit\nChapters\n0:00 Introduction\n1:54 Neural N-Gram Models\n6:03 Recurrent Neural Networks\n11:47 LSTM Cells\n12:22 Outro\n\nMusic (In Order):\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nHelynt - Hearthome City\nHelynt - Route 10\nGameChops - National Park\nHelynt - Bo-Omb Battlefield\nHelynt - Verdanturf Town\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-04-08T15:15:50Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/rTz6hadM1Lg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjFpbC1zNG1nTmRJ",
+    "title": "What does it mean for computers to understand language? | LM1",
+    "description": "An introduction to language modeling, followed by an explanation of the N-Gram language model!\nSupport me on Patreon! https://patreon.com/vcubingx\nPart 2! https://youtu.be/rTz6hadM1Lg\n\n3blue1brown series on Transformers: https://youtu.be/wjZofJX0v4M\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/dl-visualization\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nSources (includes the entire series): https://docs.google.com/document/d/1e9dB6Q-A6z1d33w2m0_DrMS5EdbSunY2TPvZmZf41Gc/edit\n\nChapters\n0:00 Introduction\n1:39 What is NLP?\n2:45 What is a Language Model?\n4:38 N-Gram Language Model \n7:20 Inference\n9:18 Outro\n\nMusic (In Order):\nGameChops - National Park\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nHelynt - Bo-omb Battlefield\nHelynt - Undewater\nHelynt - Route 10\nHelynt - Twinleaf Town\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-04-01T19:15:48Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/1il-s4mgNdI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLkhUQ2Q2V3VabDNN",
+    "title": "Why does π show up in the Mandelbrot Set? #maths #science #fractal #physics #mathematics #animation",
+    "description": "Watch the full video here! https://youtu.be/3tz_2syhWAE\n\nMusic (In order)\nKnowmadic - Faces https://chll.to/892bc12e\nPhilanthrope, mommy - embrace https://chll.to/7e941f72",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-01-18T15:00:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/HTCd6WuZl3M/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlluUTVla1BaZjh3",
+    "title": "vcubingx Live Stream",
+    "description": "",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-01-18T03:06:59Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/YnQ5ekPZf8w/mqdefault_live.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmVJRFNrZ3N1Q2hv",
+    "title": "What does a complex derivative look like? #maths #science #mathematics",
+    "description": "Watch the full video here! https://youtu.be/0CHZMY02Dhk\nSupport me on Patreon: https://patreon.com/vcubingx\n\nMusic:\nKnowmadic - Faces https://chll.to/892bc12e",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2024-01-08T00:37:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/eIDSkgsuCho/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjlWN0VXbXI0Vktj",
+    "title": "A one sentence proof?! (Fermat's Two Squares)",
+    "description": "Watch the full video: https://youtu.be/r2o11yHAa2U",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2023-12-22T16:07:07Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/9V7EWmr4VKc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLnIybzExeUhBYTJV",
+    "title": "Is this the most beautiful proof? (Fermat's Two Squares)",
+    "description": "A visual explanation of one-sentence proof of Fermat's Two Squares Theorem by Don Zagier.\nSupport me on Patreon! https://patreon.com/vcubingx\n\nThis video adapted a lot of material from this paper: https://arxiv.org/abs/2112.02556\nIf you're interested in this proof, I highly recommend it and Proofs From The Book! (In general, if you're interested in math, you should read Proofs From The Book)\n\nSome Clarifications:\nAt 9:00, I meant to say 3^2 + 2^2. Sorry :p\nWhen it comes to the Zagier Map, one question a friend asked is that we only ever consider cases where the inner square is the smallest square or the largest square - what about the in between cases? To this, try and think of if you can create a windmill with an \"in-between\" case. If you can/cannot, why? (spoiler you can't!)\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/videos\n\nA huge thanks to Chaeyeon Lee, Youngjin Park, Oliver Ni, Eric Che and Antonio Kam for helping me review the video!\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nChapters:\n0:00 Introduction\n1:40 Part 1: The Involution\n5:42 Part 2: The Windmill\n10:47 Part 3: The Zagier Map\n15:12 Putting it all together\n17:13 Outro\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter:  https://twitter.com/vcubingx  \nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx  \nPatreon: https://patreon.com/vcubingx  \n\nMusic (in order):\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nGameChops - National Park\nPhilanthrope, Idealism - Still https://chll.to/a110849c\nGameChops - Route 113\nHelynt - Route 47\nHelynt - Bo-omb Battlefield\nHelynt - Undewater\nKnowmadic - Faces https://chll.to/892bc12e\nHelynt - Littleroot Town\n\nHope you guys enjoyed the music! I especially had fun picking out the tracks for this video. S/o to Helynt, they make amazing remixes!\n\nThe most beautiful proof in math? (Fermat's Two Squares Theorem)\n\nSome tags: number theory, fermat's two squares, windmills, proofs, mathematics, vcubingx v cubingx, vcubing x",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2023-12-22T16:00:53Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/r2o11yHAa2U/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjN0el8yc3loV0FF",
+    "title": "The secret π in the Mandelbrot Set",
+    "description": "Support me on Patreon! https://patreon.com/vcubingx\nOffset your carbon footprint on Wren: https://www.wren.co/start/vcubingx The first 100 people who sign up will have 10 extra trees planted in their name!\n\nThe mandelbrot set is probably the single most iconic picture in all of math. Yet, somehow, someway, there's always something about this fractal that I find myself scratching my head about. Today, let's look at one of those things :)\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/videos, which utilize manim: https://github.com/3b1b/manim\n\nHuge thanks to @alfcnz, @Bean_Piano for reviewing and helping me with the video!\n\nYou can find my sources here (including the code used to generate the zoom in section, which I did not do myself, and the math behind how the colors are generated): https://docs.google.com/document/d/1vZidyO8ujH6X7xIcNFavzsTs7kcl57TrPQrRnBoYciU/edit\n\nA portion of this video was sponsored by Wren.\n\nMusic (In order)\nKnowmadic - Faces https://chll.to/892bc12e\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nPhilanthrope, Idealism - Still https://chll.to/a110849c\nJujutsu Kaisen (but its okay if its lofi?)\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx\n\nThe unexpected pi hidden in the Mandelbrot Set\nSome tags: vcubingx, v cubingx, vcubing x, v cubing x, mandelbrot set, pi, fractal,",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2022-08-06T14:30:15Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/3tz_2syhWAE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjFwUUprdDctUjRR",
+    "title": "What are Reed-Solomon Codes? How computers recover lost data",
+    "description": "An introduction to Modular Arithmetic, Lagrange Interpolation and Reed-Solomon Codes.\nSign up for Brilliant! https://brilliant.org/vcubingx\nFund future videos on Patreon! https://patreon.com/vcubingx\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/videos\n\nFollow me on Twitter for updates/sneak peeks! https://twitter.com/vcubingx\n\nSources for the video: https://docs.google.com/document/d/1sstOmw6Q6r6dwEVCiau49iFkjs7zuBt2pStyA0_gU10/edit?usp=sharing\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx\n\nMusic, by ChillHop and GameChops (In Order):\nMommy x Philanthrope - Embrace\nGameChops - Route 113\nKnowmadic - Faces\nIdealism - Still\nGameChops - Azalea Town\n\nChapters:\n0:00 Introduction\n2:02 Modular Arithmetic\n6:12 Lagrange Interpolation\n11:12 Reed-Solomon Codes, Putting it together\n14:50 Outro\n15:33 Brilliant Ad\n16:33 Outro\n\nTags: Reed-Solomon Codes, Lagrange Interpolation, Finite Field, Error Correcting Codes, Modular Arithmetic, Polynomial Interpolation, Reed Solomon Codes",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2022-04-09T14:00:16Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/1pQJkt7-R4Q/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjBDSFpNWTAyRGhr",
+    "title": "What does it mean to take a complex derivative? (visually explained)",
+    "description": "The complex derivative, from differentials to the Cauchy-Riemann Equations\nSupport me on Patreon! https://patreon.com/vcubingx\nSign up for Brilliant (sponsored link)! https://brilliant.org/vcubingx\n\nThe source code for the animations can be found here:\nhttps://github.com/vivek3141/videos\n\nA huge thanks to @3blue1brown , @Aleph0 , @alfcnz , Sumedh Shenoy, Nikhil Maserang and Oliver Ni for helping me review the video!\n\nIf you're interested in learning why conformal doesn't necessarily mean differentiable, read Chapter 4.VI \"Conformal = Analytic\" of Tristan Needham's \"Visual Complex Analysis\", which you can find here: http://usf.usfca.edu/vca/\n\nThis book is incredible, some of the ideas in this video were taken from this book. You can find all my sources here: https://docs.google.com/document/d/13chruB-Mmxc722Xxsv0Daz9pLqdX5AAI4olvvS9dq7Y/edit\n\nSome extra info:\nAt 20:47, I mention that a function is holomorphic if it satisfies the cauchy-riemann equations. This is not always true, the partial derivatives have to be continuous as well. \nFor example, f(z) = {0 if z=0, z^5/|z^4| if z!=0} satisfies the cauchy-riemann equations but is not differentiable at z=0.\nThanks to Ge for pointing this out!\n\nMistakes:\n3:15: The upper number line should still be labeled as \"x\" instead of \"x^2\"\n14:56 It should be nz^(n-1)\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nChapters:\n0:00 Intro\n1:53 The Real Derivative, Revisited\n4:31 Differential View\n9:17 Transformation View\n13:02 Conformality\n16:01 Cauchy-Riemann Equations\n22:15 Brilliant Ad, Stereographic Projection\n23:57 Outro, deriv of e^z\n\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx\n\nMusic (in order):\nKnowmadic - Faces https://chll.to/892bc12e\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\nGameChops - Route 113\nKnowmadic - Faces https://chll.to/892bc12e\nPhilanthrope, Idealism - Still https://chll.to/a110849c\nGameChops - Azalea Town\n\nWhat does it mean to take a complex derivative? (visually explained)\n\nSome tags: complex analysis, cauchy-riemann, imaginary, derivative, vcubingx",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2022-01-07T15:00:09Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/0CHZMY02Dhk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLi1hdDdTTG9WS19J",
+    "title": "What happens *inside* a neural network?",
+    "description": "Visuals to demonstrate how a neural network classifies a set of data. Thanks for watching!\nSupport me on Patreon! https://patreon.com/vcubingx\nSource Code: https://github.com/vivek3141/dl-visualization\n\nHere's the course I referred to in the video. I am not affiliated with NYU.\nhttps://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq\n\nSinusoids as activation functions:\nhttps://openreview.net/forum?id=Sks3zF9eg\nhttps://vsitzmann.github.io/siren/\n\nHere's the distill.pub article:\nhttps://distill.pub/2020/grand-tour/\n\nSpecial thanks to Alfredo Canziani and Nikhil Maserang for reviewing the video.\n\nAnd also thanks to Grant Sanderson himself for giving me some manim tips!\n\nI've been active on twitter, follow me here!\nhttps://twitter.com/vcubingx\n\nJoin my discord server!\nhttps://discord.gg/Kj8QUZU\n\nThese animation in this video was made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nMusic is from GameChops (Route 113, Azalea Town, Ecruteak City\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx\n\nWhat does a Neural Network *actually* do? Visualizing Deep Learning, Chapter 2\n\n0:00 Intro\n0:18 Recap of Part 1\n1:57 Introducing the dataset\n2:52 Structure of the Neural Network we’ll be using\n3:34 What is softmax?\n5:52 Input space decision boundaries\n6:24 Modifying the Neural Network to visualize what it’s doing\n7:36 Out-of-domain boundaries\n8:46 sin(x) as an activation function\n9:30 Neuron planes\n11:57 Softmax surfaces\n13:20 MNIST Transformation\n13:42 Outro",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2021-10-15T14:00:22Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/-at7SLoVK_I/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlVPdlBlQzhXT3Q4",
+    "title": "The Neural Network, A Visual Introduction",
+    "description": "A visual introduction to the structure of an artificial neural network. More to come!\nSupport me on Patreon! https://patreon.com/vcubingx\nSource Code: https://github.com/vivek3141/dl-visualization\n\nHere's the course I referred to in the video. I am not affiliated with NYU.\nhttps://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq\n\nHere's 3blue1brown's video on Linear Transformations: \nhttps://youtu.be/kYB8IZa5AuE\n\nSpecial thanks to Matt Henderson, David Ha, Oliver Ni and Sumedh Shenoy for reviewing the video.\n\nAnd also thanks to Grant Sanderson himself for giving me some manim tips!\n\nI've been quite active on twitter, follow me here!\nhttps://twitter.com/vcubingx\n\nJoin the discord server!\nhttps://discord.gg/Kj8QUZU\n\nThese videos were made using 3blue1brown's library, manim:\nhttps://github.com/3b1b/manim\n\nFollow me!\nWebsite: https://vcubingx.com\nTwitter: https://twitter.com/vcubingx\nGithub: https://github.com/vivek3141\nInstagram: https://instagram.com/vcubingx\nPatreon: https://patreon.com/vcubingx\n\nThe Neural Network, A Visual Introduction | Visualizing Deep Learning, Chapter 1\n\n0:00 Intro\n1:55 One input Perceptron\n3:30 Two input Perceptron\n4:40 Three input Perceptron\n5:17 Activation Functions\n6:58 Neural Network\n9:45 Visualizing 2-2-2 Network\n10:59 Visualizing 2-3-2 Network\n12:33 Classification\n13:05 Outro",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-08-23T14:00:08Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UOvPeC8WOt8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLkxETkRUT1ZuS0pr",
+    "title": "A horizontal integral?! Introduction to Lebesgue Integration",
+    "description": "Support me on Patreon! https://patreon.com/vcubingx\nJoin my discord server! https://discord.gg/Kj8QUZU\n\nTerry Tao's book on Measure Theory: https://terrytao.files.wordpress.com/2012/12/gsm-126-tao5-measure-book.pdf\nLearn about Lebesgue Measure: https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes_ch2.pdf\n\nMore applications!\nhttps://pdfs.semanticscholar.org/ff79/d53072a1ce8704d037987951f22d4d4c1018.pdf\n\nSource code: https://github.com/vivek3141/videos\n\nSources: https://docs.google.com/document/d/16627SCK1_pDaHs8jqkWCCM1wbxVhzEEoht9p67q85-A/\n\nFollow me!\nhttps://twitter.com/vcubingx\nhttps://github.com/vivek3141\nhttps://vcubingx.com",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-07-09T14:32:40Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/LDNDTOVnKJk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlJhN2FRbGVuVGI4",
+    "title": "The million dollar equation (Navier-Stokes equations)",
+    "description": "PLEASE READ PINNED COMMENT\n\nIn this video, I introduce the Navier-Stokes equations and talk a little bit about its chaotic behavior. Make sure to like and subscribe!\n\nWhat is a newtonian fluid? https://physics.stackexchange.com/questions/293349/intuitive-definition-for-newtonian-fluid\n\nDivergence and Curl by 3b1b: https://youtu.be/rB83DpBJQsE\n\nSource code for the animations: https://github.com/vivek3141/videos\n\nFollow me!\nhttps://twitter.com/vcubingx\nhttps://github.com/vivek3141\n\nSources: https://docs.google.com/document/d/1l-J41Qw9NfzTDF54SPJe7g5DuR108bXc-AYMudZjT9Q/edit?usp=sharing",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-06-06T14:56:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Ra7aQlenTb8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlNRTHhycjlOOHpN",
+    "title": "Calculus of Variations ft. Flammable Maths",
+    "description": "Flammable Maths: https://www.youtube.com/channel/UCtAIs1VCQrymlAnw3mGonhw\n\nLeibnitz Rule: https://www.youtube.com/watch?v=wkh1Y7R1sOw\n\nThis video is an introduction to the calculus of variations. We go over what variational calculus is trying to solve, and derive the Euler-Lagrange equation, the key partial differential equation to all this. \n\nSource code for animations! https://github.com/vivek3141/videos\nJoin my discord server! https://discord.gg/Kj8QUZU\n\n-----------\n0:00 Intro to Variational Calculus\n3:38 Derivation of Euler-Lagrange equation\n19:20 Application of Euler-Lagrange equation\n-----------\n\nFollow me!\nhttps://twitter.com/vcubingx\nhttps://github.com/vivek3141\n\nMusic by Chillhop:\nKnowmadic - Faces https://chll.to/892bc12e",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-04-25T17:10:08Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/SQLxrr9N8zM/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmtob1JWOUJGZEpF",
+    "title": "The Coupon Collector's Problem",
+    "description": "Get 2 months of skillshare premium here! https://skl.sh/vcubingx\n\nJoin my discord server! https://discord.gg/Kj8QUZU\n\nThe coupon collector's problem goes as follows: let's say you want to collect N coupons through draws that have an equal probability of getting any of the N coupons. What's the expected value of the number of draws to get all N coupons?\n\nFollow Me!\nhttps://vcubingx.com\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\nhttps://instagram.com/vcubingx",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-04-17T18:12:56Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/khoRV9BFdJE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlktZ0RXTFFGRTRn",
+    "title": "Domino Tiling and Graph Theory",
+    "description": "A beautiful solution to a difficult problem. Late pi day video!\n\nCode for the solution: https://github.com/vivek3141/domino-tiling\nSource Code for the animations: https://github.com/vivek3141/videos/blob/master/domino.py\n\nNew website + store: https://vcubingx.com\n\nPermanent of a matrix: https://math.berkeley.edu/~bernd/ban275.pdf\n\nFollow Me!\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\nhttps://instagram.com/vcubingx\n\nVideo Sources: https://docs.google.com/document/d/1gKk8Ig-cwcg5caEZUaNqsUA3h4HpOLEJHphkJndPc_E\n\nMusic by ChillHop\n\n#math #animation #graphs",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-03-19T18:26:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Y-gDWLQFE4g/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmRrdEg4aEphZHlV",
+    "title": "The Pattern to Prime Numbers?",
+    "description": "In this video, we explore the \"pattern\" to prime numbers. I go over the Euler product formula, the prime number theorem and the connection between the Riemann zeta function and primes.\n\nHere's a video on a similar topic by Numberphile if you're interested: https://youtu.be/uvMGZb0Suyc\n\nThere are a few mistakes in this video, so I clarified them in a pinned comment. Sorry about that!\n\nThis video adapted several concepts and ideas from this article: https://medium.com/cantors-paradise/the-riemann-hypothesis-explained-fa01c1f75d3f\n\nMore sources: https://docs.google.com/document/d/1_lFWtsuPfWNq0VFAiqknsSeAOa-Oy2MDrmH6d-EOiBg/edit?usp=sharing\n\nRiemann Hypothesis by 3b1b: https://youtu.be/sD0NjbwqlYw\n\nComplex Exponents by 3b1b: https://youtu.be/v0YEaeIClKY\n\nHarmonic Series Divergence: https://web.williams.edu/Mathematics/lg5/harmonic.pdf\n\nP-Series Convergence: https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-5/a/proof-of-p-series-convergence-criteria\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos\n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nMusic by ChillHop\n\n#primes #zeta #math",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2020-01-20T05:01:51Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/dktH8hJadyU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmdfNVA5QVdfc2Vn",
+    "title": "The Painter's Paradox",
+    "description": "In this video, we talk about the painter's paradox, that describes an object that can't be covered with paint but can be filled with paint. How is it possible to have an object with an infinite surface area but a finite volume? Doesn't it make sense that the outside of an object always takes up less space than the inside? \n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-11-22T05:52:34Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/g_5P9AW_seg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLlVPRzNtT2h2NVhv",
+    "title": "The Divergence Theorem, a visual explanation",
+    "description": "This video talks about the divergence theorem, one of the fundamental theorems of multivariable calculus. The divergence theorem relates a flux integral to a triple integral. \n\nGreen's Theorem: https://youtu.be/8SwKD5_VL5o\nLine Integrals:  https://youtu.be/dnGDmZynvYY\n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-09-02T17:59:17Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UOG3mOhv5Xo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLkE0c1RBS042eUZB",
+    "title": "The Fractional Derivative, what is it? | Introduction to Fractional Calculus",
+    "description": "This video explores another branch of calculus, fractional calculus. It talks about the Riemann–Liouville Integral and the Left Riemann–Liouville Fractional Derivative, and ends with an application to the Tautochrone Problem.\n\nBrachistochrone:\nhttps://www.youtube.com/watch?v=skvnj67YGmw\nhttps://www.youtube.com/watch?v=Cld0p3a43fU\n\nThis video was mostly a video adaptation of this article: https://medium.com/cantors-paradise/fractional-calculus-48192f4e9c9f\n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nMusic by ChillHop\n\n#calculus #fractional #math\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos\n\nSources: https://docs.google.com/document/d/1KNcPoYom2UbF5nyH2tmktfs67kyL7-upfiRKbqu-_BM/edit?folder=0AF8kt9Iej-LyUk9PVA\n\n------------------\n0:00 Introduction\n1:20 Fractional Integration\n6:31 The Left R-L Fractional Derivative\n11:22 The Tautochrone Problem\n----------------------",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-07-25T09:16:51Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/A4sTAKN6yFA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjlDZ090aFVVZHc0",
+    "title": "Why does pi show up here? | The Gaussian Integral, explained",
+    "description": "Support me on Patreon! https://patreon.com/vcubingx\nJoin my discord server! ​https://discord.gg/Kj8QUZU\n\nThe Gaussian Integral is a term that describes the area under a normal distribution of mean 1. This value is equal to the square root of pi. In this video, I go over the hidden circle behind this, using a bit of multivariable calculus. Hope you enjoy!\n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nMusic by Chillhop: http://chillhop.com/listen\nsadtoi - Jeux D'eau https://chll.to/60d3efc2\nPhilanthrope, mommy - embrace https://chll.to/7e941f72\n\n#calculus #gaussian #integral\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-07-04T02:38:06Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/9CgOthUUdw4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLjhTd0tENV9WTDVv",
+    "title": "Green's Theorem, explained visually",
+    "description": "Support me on Patreon! https://patreon.com/vcubingx\n\nThis video aims to introduce green's theorem, which relates a line integral with a double integral. \n\nLine Integrals:  https://youtu.be/dnGDmZynvYY\n\nDivergence and Curl by 3b1b: https://youtu.be/rB83DpBJQsE\n\nFor the example at 5:07, the equation of the vector field has the x equation and y equation flipped. It should be F=(-yx + x^3, 6y-9x).\n\nFollow Me!\nhttps://instagram.com/vcubingx\nhttps://github.com/vivek3141\nhttps://twitter.com/vcubingx\n\nRead More:\nhttps://brilliant.org/wiki/greens-theorem/ \nhttps://mathinsight.org/greens_theorem_idea\nhttps://www.khanacademy.org/math/multivariable-calculus/greens-theorem-and-stokes-theorem/greens-theorem-articles/a/greens-theorem\nhttp://tutorial.math.lamar.edu/Classes/CalcIII/GreensTheorem.aspx\n\n#calculus #multivariable #greenstheorem\n\nMusic by Chillhop: http://chillhop.com/listen\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-06-10T08:03:15Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/8SwKD5_VL5o/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLmRuR0RtWnludllZ",
+    "title": "The Line Integral, A Visual Introduction",
+    "description": "Vector Field Visualizer:\nhttps://vivek3141.github.io/vector-field-visualizer\nhttps://github.com/vivek3141/vector-field-visualizer\n\n3D Plotters(by far the best): https://www.math3d.org/\n\nThis video gives a brief introduction to the line integral. I talk about line integrals over scalar fields and line integrals over vector fields along with a few sample problems. \n\nFor some reason, I didn't like this video very much. It doesn't have the satisfying feel I get from some of my other ones. Even though I am extremely satisfied with the animations, I'm not one bit with the audio. I was going to redo it, but then realized I had 550 subs, and decided to upload it anyway, someone might like it.\n\nIf you want to study some more, Paul's online notes are great for breezing through the concepts, but if you want a formal course, you could either take it at a college nearby or try Khan/other online classes. \n\nMusic by ChillHop\nsadtoi - Jeux D'eau https://chll.to/60d3efc2\nBarnes Blvd. - Perspective https://chll.to/e546dbcc\n\n#calculus #multivariable #lineintegral\n\nThis video was animated using manim: https://github.com/3b1b/manim\nSource code for the animations: https://github.com/vivek3141/videos",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2019-02-12T03:28:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/dnGDmZynvYY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVV2MG5GOHpXZXZFc1NWY216Nm1sdzZBLm9NMnpWRDlyTDhJ",
+    "title": "How to connect to your Raspberry Pi using Ethernet! (Secure Shell[SSH] and Remote Desktop)",
+    "description": "So if you want to ssh or remote desktop to your raspberrry pi, for most people it just doesn't work directly. This video describes how to ssh to your raspberry pi and also remote desktop to your raspberry pi with just one ethernet cable.\n\nThanks for stopping by. Like it if it helped you or you liked it and make sure to subscribe so that you don't miss any new content.\nShare it if you think somebody might find it useful!\n\nDHCP Server: \nhttp://www.dhcpserver.de/cms/download/\n\nPutty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html\n\nPlease tell me what you think in the comments...\nSubscribe to VCubing X\n\nHow to connect to your Raspberry Pi using Ethernet! (Secure Shell[SSH] and Remote Desktop)",
+    "channel_id": "UCv0nF8zWevEsSVcmz6mlw6A",
+    "channel_title": "vcubingx",
+    "published_at": "2017-07-13T22:53:58Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/oM2zVD9rL8I/mqdefault.jpg"
+  }
+]

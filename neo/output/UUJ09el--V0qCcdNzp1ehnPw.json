@@ -1,0 +1,20 @@
+[
+  {
+    "video_id": "VVVKMDllbC0tVjBxQ2NkTnpwMWVoblB3LmJuNTFldWVJcmpN",
+    "title": "Visualizing stock performance",
+    "description": "I walk through how to make an index chart for comparing the performance of regional bank stocks using Observable Plot.\n\nNotebook: https://observablehq.com/@mbostock/visualizing-stock-performance\nExample: https://observablehq.com/@observablehq/plot-index-chart",
+    "channel_id": "UCJ09el--V0qCcdNzp1ehnPw",
+    "channel_title": "Mike Bostock",
+    "published_at": "2023-05-16T17:47:29Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/bn51eueIrjM/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVKMDllbC0tVjBxQ2NkTnpwMWVoblB3LkFoZGZRaGkwek5V",
+    "title": "Visualizing bank failures",
+    "description": "I visualized FDIC-reported bank failures as a dodge plot. It was popular on the internet! Here’s how I did it using Observable.\n\nLink: https://observablehq.com/@mbostock/bank-failures",
+    "channel_id": "UCJ09el--V0qCcdNzp1ehnPw",
+    "channel_title": "Mike Bostock",
+    "published_at": "2023-05-05T23:18:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/AhdfQhi0zNU/mqdefault.jpg"
+  }
+]

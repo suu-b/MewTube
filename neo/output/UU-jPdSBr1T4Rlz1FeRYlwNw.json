@@ -1,0 +1,20 @@
+[
+  {
+    "video_id": "VVUtalBkU0JyMVQ0Umx6MUZlUllsd053LnBMQnhyWThSWDZ3",
+    "title": "How Modal built their own container runtime, file system, GPU resource solver, and more",
+    "description": "Modal is the most interesting place in the world to run your AI workloads. They’ve taken a completely different approach than everyone else in this space, building an entire container runtime from scratch, a new file system (two, actually), and a framework for running workloads across multiple clouds, all abstracted from the user with a simple decorator UX. This video goes deep on how they did all of that, with Akshat Bubna, Modal's Co-founder and CTO.\n\n00:00: Intro\n2:31: How Modal makes container startups so fast – their custom container runtime and image filesystem\n8:00: More details on Modal’s filesystem and using FUSE\n10:02: How Modal does multi-cloud to aggregate GPU supply, and how they built their resource solver\n17:01: Challenges with running GPUs – bad error messages, cooling issues, etc.\n19:39: Modal’s input plane queuing system for managing customer workloads\n21:32: Memorable Linux kernel bugs Modal has found\n23:31: How Modal built their sandboxed environment to run untrusted code\n28:11: How Modal makes multi-tenancy via gVisor (not Docker)\n30:31: General performance issues Modal ran into – saturating network bandwidth, skipping kernel roundtrips, RDMA, etc.\n36:06: How Modal dealt with fraud (e.g. crypto mining) – intercepting system calls via gVisor\n37:46: The team behind all of this – how Modal hires system engineers and building a culture around systems engineering\n40:49: The supercomputing universe and how it’s starting to overlap with compute for AI\n46:51: Modal is hiring!",
+    "channel_id": "UC-jPdSBr1T4Rlz1FeRYlwNw",
+    "channel_title": "Amplify Partners",
+    "published_at": "2025-08-20T16:35:25Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/pLBxrY8RX6w/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVUtalBkU0JyMVQ0Umx6MUZlUllsd053LnZyYXF3VmNPY29z",
+    "title": "Amplify Partners 2024 Lookback",
+    "description": "It was the best of times, it was the worst of times, but most relevant for this post, it was a great year for Amplify. From dozens of new investments and follow-on rounds, to 3 new team members (plus 3 babies), a new publication, a podcast, and 120 issues of the Projects to Know newsletter…well, we’ve been busy. But not too busy to recap it all for you here. So without further ado, we give you The Amplify 2024 Lookback.",
+    "channel_id": "UC-jPdSBr1T4Rlz1FeRYlwNw",
+    "channel_title": "Amplify Partners",
+    "published_at": "2024-12-20T18:20:40Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/vraqwVcOcos/mqdefault.jpg"
+  }
+]

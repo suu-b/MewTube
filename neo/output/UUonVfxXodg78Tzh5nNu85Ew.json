@@ -1,0 +1,1181 @@
+[
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkQ4R09lQ0ZGYnk0",
+    "title": "The most complex model we actually understand",
+    "description": "New AI Book! https://www.welchlabs.com/resources/ai-book-ezrzm Get a free ebook version today when you order a copy from our January 2026 print run! You’ll receive a discount code for 100% off the ebook in your purchase confirmation email. \n\nebook: https://www.welchlabs.com/resources/the-welch-labs-illustrated-guide-to-ai-digital-download\n\nPatreon: https://www.patreon.com/welchlabs\n\nSections\n0:00 - Intro\n2:39 - Modular Addition\n3:54 - The Model’s Perspective\n6:52 - An Accidental Discovery at OpenAI\n7:56 - It Groks!\n8:49 - Some Clues\n13:17 - New Welch Labs Book!\n13:57 - Deeper into the model\n15:13 - Linear Probes\n16:59 - Clocks perform modular addition\n19:17 - How do x and y interact exactly?\n23:19 - It learns a trig identity?!\n26:38 - Putting the pieces together & excluded loss\n30:02 - Anthropic finds 6D manifolds\n32:24 - Final thoughts\n34:02 - Welch Labs update\n\nSpecial thanks to Neel Nanda for discussing his work and Mech Interp with me, if you want to learn more about Mech Interp, check out Neel’s getting started post here: https://neelnanda.io/getting-started\n\nThanks to Emmanuel Ameisen and Wes Gurnee for discussing their work on Claude Haiku. Their paper is incredibly in depth and interesting: https://transformer-circuits.pub/2025/linebreaks/index.html\n\nOpenAI team’s grokking paper: https://arxiv.org/pdf/2201.02177. I wasn’t able to reach to team for comment on the origin story, but it is told here: https://www.youtube.com/watch?v=gYGWFjMf9JA&t=1236s\nNanda et al. https://arxiv.org/pdf/2301.05217v1\nMore on Grokking: https://www.quantamagazine.org/how-do-machines-grok-data-20240412/\nCode based on excellent these notebooks from Neel Nanda and collaborators:\nhttps://colab.research.google.com/drive/1F6_1_cWXE5M7WocUcpQWp3v8z4b1jL20\n\nhttps://colab.research.google.com/github/callummcdougall/ARENA_3.0/blob/main/chapter1_transformer_interp/exercises/part52_grokking_and_modular_arithmetic/1.5.2_Grokking_%26_Modular_Arithmetic_solutions.ipynb\nAndrej Karapathy on “Summoning Ghosts”: https://karpathy.bearblog.dev/animals-vs-ghosts/\n\nCode: https://github.com/stephencwelch/manim_videos/tree/master/_2025/grokking\n\nTechnical Notes\n- It’s very natural for the attention layer to take the sum of it’s inputs (e.g. cos(kx)+cos(ky)), however we also find strong product terms. There’s a couple ways the network can compute products like cos(kx)cos(ky). One option is to approximate the product using ReLU activation functions (see Nanda’s notebooks for more). It’s also feasible for the attention block to do this, I found more evidence of this is my own exploration than of the product happening in the MLP’s ReLU units as suggested by Nanda et al.\n- In the first 2D fourier decomposition, we’re leaving out one component, specifically a “negative frequency component” → 0.26 * np.cos(2*np.pi*((4*i)/113)) * np.cos(2*np.pi*((109*j)/113)). We left this out to avoid digging into a discussion of negative/aliased frequencies, and having this 4th component doesn’t add to our intuition about what the network is doing here.\n- at 28:00 we’re not showing removing the 8pi/113 frequency from the model’s final output surface.\n\nPatrons \nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs, Lauren Steely, Jeff Eastman, Rodolfo Ibarra, Clark Barrus, Rob Napier, Andrew White, Richard B Johnston, abhiteja mandava, Burt Humburg, Kevin Mitchell, Daniel Sanchez, Ferdie Wang, Tripp Hill, Richard Harbaugh Jr, Prasad Raje, Kalle Aaltonen, Midori Switch Hound, Zach Wilson, Chris Seltzer, Ven Popov, Hunter Nelson, Amit Bueno, Scott Olsen, Johan Rimez, Shehryar Saroya, Tyler Christensen, Beckett Madden-Woods, Darrell Thomas, Javier Soto, U007D, Caleb Begly, Rick Rubenstein, Brent Hunsaker, Dan Patterson, Tchsurvives, Alex Adai, Walter Reade, Zyansheep, Walter Reade, Duncan Stannett, Reginald Carey, Jean-Manuel Izaret, dh71633, Adrian Rodriguez, Dimitar Stojanovski, Michael Harder, Peter Maldonado, Emily Pesce, David Johnston, Insang Song, FaeTheWolf, Stephen Taylor, KittenKaboodle, EMatter, PATRICKMCCORMACK, John Beahan, Cameron, Cole Jones, Garrett Thornburg, Jeroen W, Rohit Sharma, GlennB, Emmanuel Cortes, Katie Quinn, Karina C, Cakra WW, Mike Ton, Eric Gometz, MacCallister Higgins, Niko Drossos, David Eraso, Tom Zehle, Steve, Brian Lineburg, rjbl, Michael Loh, Perry Vais, Bengal0, Farhad Manjoo, Sara Chipps, Ellis Driscoll, William Taysom, Will Harmon, CK, Abdullah, Peter Cho, Leo Nikora, Griffin Smith, Ash Katnoria, Alex, Markus Hays Nielsen, Catherine H., Vi, David Dobáš, Peter Wang, Sina Sohangir, Danny Thomas, Julian Francis, Hans Adler, Jiayu Peng\n \nCreated by: Stephen Welch, Sam Baskin, and Pranav Gundu",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-12-20T12:27:10Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/D8GOeCFFby4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lno2NGE3VVN1R1gw",
+    "title": "What the Books Get Wrong about AI [Double Descent]",
+    "description": "Huge thanks to KiwiCo for sponsoring today’s video! Go to https://www.kiwico.com/welchlabs and use code WELCHLABS for 50% off your first monthly crate or for 20% off your first Panda Crate!\n\nNew Book Available for Preorder Now! The Welch Labs Illustrated Guide to AI (30:47): \nhttps://www.welchlabs.com/resources/ai-book-ezrzm\n\nSections \n0:00 - Intro\n3:43 - AlexNet & Overfitting\n5:19 - Overfitting\n6:45 - Rethinking Generalization\n11:05 - KiwiCo is Awesome\n12:28 - The Double Descent Hypothesis\n13:57 - Double Descent is Real!\n16:01 - Double Descent with Polynomial Curvefitting?!\n20:36 - But why?\n22:35 - Should I throw out my books?\n24:28 - The Bias-Variance Tradeoff\n28:30 - My take\n30:47 - I’ve written a new book on AI!\n\nBooks with U-shaped test set error curves:\nMurphy, Kevin P. Probabilistic machine learning: an introduction. MIT press, 2022.\nGoodfellow, Ian, et al. *Deep learning*. Vol. 1. No. 2. Cambridge: MIT press, 2016.\nRussell, Stuart Jonathan, and Peter Norvig, eds. *Prentice Hall series in artificial intelligence*. Englewood Cliffs, NJ:: Prentice Hall, 1995.\nBishop, Christopher M., and Nasser M. Nasrabadi. *Pattern recognition and machine learning*. Vol. 4. No. 4. New York: springer, 2006.\nLearning, Machine. \"Tom mitchell.\" *Publisher: McGraw Hill* (1997): 31.\nHastie, Trevor, Robert Tibshirani, and Jerome Friedman. \"The elements of statistical learning.\" (2009).\nHastie, Trevor, Robert Tibshirani, and Jerome Friedman. \"An introduction to statistical learning.\" (2009).\nAbu-Mostafa, Yaser S., Malik Magdon-Ismail, and Hsuan-Tien Lin. *Learning from data*. Vol. 4. New York: AMLBook, 2012.\nMacKay, David JC. *Information theory, inference and learning algorithms*. Cambridge university press, 2003.\n\nHarvard Team’s code & results: \nhttps://gitlab.com/harvard-machine-learning/double-descent\n\nGreat repo showing polynomial double descent: \nhttps://github.com/RylanSchaeffer/Stanford-AI-Alignment-Double-Descent-Tutorial\n\nTechnical Notes\n- 26:25 For these linear fits, we’re using N=15 instead of N=5 points. This increases the bias and reduces the variance of these fits, making the bias variance trade-off more clear, but also pushes out the interpolation threshold. Full results are here: https://github.com/stephencwelch/manim_videos/blob/master/_2025/generalization/Final Video Polynomial Examples.ipynb\n- 27:38 It’s tricky to show the full bias-variance results here, as the variance explodes ad Degree=4. Instead we’ve chosen to show qualitative breakdowns, showing which terms dominate the overall error at each degree. Full results can be seen here: https://github.com/stephencwelch/manim_videos/blob/master/_2025/generalization/Final%20Video%20Polynomial%20Examples.ipynb\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs, Lauren Steely, Jeff Eastman, Rodolfo Ibarra, Clark Barrus, Rob Napier, Andrew White, Richard B Johnston, abhiteja mandava, Burt Humburg, Kevin Mitchell, Daniel Sanchez, Ferdie Wang, Tripp Hill, Richard Harbaugh Jr, Prasad Raje, Kalle Aaltonen, Midori Switch Hound, Zach Wilson, Chris Seltzer, Ven Popov, Hunter Nelson, Amit Bueno, Scott Olsen, Johan Rimez, Shehryar Saroya, Tyler Christensen, Beckett Madden-Woods, Darrell Thomas, Javier Soto, U007D, Caleb Begly, Rick Rubenstein, Brent Hunsaker, Dan Patterson, Tchsurvives, Alex Adai, Walter Reade, Zyansheep, Walter Reade, Duncan Stannett, Reginald Carey, Jean-Manuel Izaret, dh71633, Adrian Rodriguez, Dimitar Stojanovski, Michael Harder, Peter Maldonado, Emily Pesce, David Johnston, Insang Song, FaeTheWolf, Stephen Taylor, KittenKaboodle, EMatter, PATRICKMCCORMACK, John Beahan, Cameron, Cole Jones, Garrett Thornburg, Jeroen W, Rohit Sharma, GlennB, Emmanuel Cortes, Katie Quinn, Karina C, Cakra WW, Mike Ton, Eric Gometz, MacCallister Higgins, Niko Drossos, David Eraso, Tom Zehle, Steve, Brian Lineburg, rjbl, Michael Loh, Perry Vais, Bengal0, Farhad Manjoo, Sara Chipps, Ellis Driscoll, William Taysom, Will Harmon, CK, Abdullah, Peter Cho, Leo Nikora, Griffin Smith, Ash Katnoria, Alex, Markus Hays Nielsen\n\nSpecial thanks to: Mikhail Belkin, Preetum Nakkiran, Emily Zhang, Varun Reddy\n\nCode for Welch Labs Videos: https://github.com/stephencwelch/manim_videos\n\nWritten by: Stephen Welch \nProduced by: Stephen Welch, Sam Baskin, and Pranav Gundu\n\nPremium Beat IDs\nEEDYZ3FP44YX8OWT",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-10-19T17:43:56Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/z64a7USuGX0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk5VQWI2ekhYcWRJ",
+    "title": "These Numbers Can Make AI Dangerous [Subliminal Learning]",
+    "description": "Checkout RunPod’s AI infrastructure platform: https://get.runpod.io/welchlabs\nDiscount code at checkout: WELCH10\nNote that need to buy $15 or more in runpod credits for the discount code to apply, $10 will be deducted from your total. See screen recording at 3:31. \n\nSubliminal Learning Poster at 31:09: https://www.welchlabs.com/resources/subliminal-learning-poster-17x22\nSubliminal Learning Bundle: https://www.welchlabs.com/resources/subliminal-learning-poster-book-bundle\nSubliminal Learning Poster - Digital Download: https://www.welchlabs.com/resources/subliminal-learning-poster-digital-download\n\nSections\n0:00 - Intro\n1:47 - Why Welch Labs uses runpod for AI infrastructure - sponsored ad\n3:49 - The subliminal learning phenomenon\n5:44 - In context learning\n6:56 - Why can’t we just train a classifier?\n7:45 - Other clues\n9:28 - Small scale replication on MNIST\n12:47 - Mathematical proof\n23:01 - Proof Take-aways\n25:38 - Solving the GPT 4.1/4o mystery\n26:14 - My take on what’s going on\n27:55 - The token entanglement hypothesis\n29:11 - Final thoughts & take-aways\n31:09 - Subliminal Learning Poster!\n\nReferences\nSubliminal Learning Paper and code: https://alignment.anthropic.com/2025/subliminal-learning/\nGenerate Your Own Numbers: https://subliminaldata.streamlit.app/\nToken Entanglement: https://www.lesswrong.com/posts/m5XzhbZjEuF9uRgGR/it-s-owl-in-the-numbers-token-entanglement-in-subliminal-1\nHinton et. al. 2015. Distilling the Knowledge in a Neural Network. https://arxiv.org/pdf/1503.02531\n\nFull Video on Backpropagation: https://youtu.be/VkHfRKewkWw?si=PPONLc5j9Xwlv4Jw\nSoftmax Basics: https://youtu.be/VkHfRKewkWw?si=WWPlqu7y1nozl1Fo&t=377\nSoftmax Gradient: https://youtu.be/VkHfRKewkWw?si=hd63mRFFIlF3wT-A&t=836\nSoftmax Visualized: https://youtu.be/VkHfRKewkWw?si=QZmFau5DjjrFvMso&t=1418\n\nBig thanks to Alex Cloud, Minh Le, Jacob Hilton, and Owain Evans for graciously answering my questions as I worked on the script.  \n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs, Lauren Steely, Jeff Eastman, Rodolfo Ibarra, Clark Barrus, Rob Napier, Andrew White, Richard B Johnston, abhiteja mandava, Burt Humburg, Kevin Mitchell, Daniel Sanchez, Ferdie Wang, Tripp Hill, Richard Harbaugh Jr, Prasad Raje, Kalle Aaltonen, Midori Switch Hound, Zach Wilson, Chris Seltzer, Ven Popov, Hunter Nelson, Amit Bueno, Scott Olsen, Johan Rimez, Shehryar Saroya, Tyler Christensen, Beckett Madden-Woods, Darrell Thomas, Javier Soto, U007D, Caleb Begly, Rick Rubenstein, Brent Hunsaker, Dan Patterson, Tchsurvives, Alex Adai, Walter Reade, Zyansheep, Walter Reade, Duncan Stannett, Reginald Carey, Jean-Manuel Izaret, dh71633, Adrian Rodriguez, Dimitar Stojanovski, Michael Harder, Peter Maldonado, Emily Pesce, David Johnston, Insang Song, FaeTheWolf, Stephen Taylor, KittenKaboodle, EMatter, PATRICKMCCORMACK, John Beahan, Cameron, Cole Jones, Garrett Thornburg, Jeroen W, Rohit Sharma, GlennB, Emmanuel Cortes, Katie Quinn, Karina C, Cakra WW, Mike Ton, Eric Gometz, MacCallister Higgins, Niko Drossos, David Eraso, Tom Zehle, Steve, Brian Lineburg, rjbl, Michael Loh, Perry Vais, Bengal0, Farhad Manjoo, Sara Chipps\n\nSpecial thank you to these readers for helping improve the Imaginary Numbers Book!\nMarwan Daar, Matt Ellis, Nico Weber, Rafa Barroso, Jacob Sorensen, Bob Hall, Evan Van Peursem, Phillipe Loher, Attila Medl, Abdul Wahid Tanner, A friendly critic, NuttySwiss, Dean Burdick, Paul Du Bois, Włodzimierz Bzyl\n\nCode for Welch Labs Videos: https://github.com/stephencwelch/manim_videos\n\nWritten by: Stephen Welch \nProduced by: Stephen Welch, Sam Baskin, and Pranav Gundu\n\nPremium Beat IDs\nEEDYZ3FP44YX8OWT\nMWROXNAY0SPXCMBS",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-09-04T15:55:07Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/NUAb6zHXqdI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnF4N2hpcnFnZnVV",
+    "title": "Why Deep Learning Works Unreasonably Well [How Models Learn Part 3]",
+    "description": "Take your personal data back with Incogni! Use code WELCHLABS and get 60% off an annual plan: http://incogni.com/welchlabs\n\nNew Patreon Rewards 33:31- own a piece of Welch Labs history!\nhttps://www.patreon.com/welchlabs\n\nBooks & Posters\nhttps://www.welchlabs.com/resources\n\nSections\n0:00 - Intro \n4:49 - How Incogni Saves Me Time\n6:32 - Part 2 Recap\n8:10 - Moving to Two Layers\n9:15 - How Activation Functions Fold Space\n11:45 - Numerical Walkthrough\n13:42 - Universal Approximation Theorem\n15:45 - The Geometry of Backpropagation\n19:52 - The Geometry of Depth\n24:27 - Exponentially Better?\n30:23 - Neural Networks Demystifed\n31:50 - The Time I Quit YouTube\n33:31 - New Patreon Rewards!\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs, Lauren Steely, Jeff Eastman, Rodolfo Ibarra, Clark Barrus, Rob Napier, Andrew White, Richard B Johnston, abhiteja mandava, Burt Humburg, Kevin Mitchell, Daniel Sanchez, Ferdie Wang, Tripp Hill, Richard Harbaugh Jr, Prasad Raje, Kalle Aaltonen, Midori Switch Hound, Zach Wilson, Chris Seltzer, Ven Popov, Hunter Nelson, Amit Bueno, Scott Olsen, Johan Rimez, Shehryar Saroya, Tyler Christensen, Beckett Madden-Woods, Darrell Thomas, Javier Soto\n\nReferences\nSimon Prince, Understanding Deep Learning. https://udlbook.github.io/udlbook/\nLiang, Shiyu, and Rayadurgam Srikant. \"Why deep neural networks for function approximation?.\" arXiv preprint arXiv:1610.04161 (2016).\nHanin, Boris, and David Rolnick. \"Deep relu networks have surprisingly few activation patterns.\" *Advances in neural information processing systems* 32 (2019).\nHanin, Boris, and David Rolnick. \"Complexity of linear regions in deep networks.\" *International Conference on Machine Learning*. PMLR, 2019.\nFan, Feng-Lei, et al. \"Deep relu networks have surprisingly simple polytopes.\" *arXiv preprint arXiv:2305.09145* (2023).\n\nAll Code: \nhttps://github.com/stephencwelch/manim_videos\n\n100k neuron wide example training code: https://github.com/stephencwelch/manim_videos/blob/master/_2025/backprop_3/notebooks/Wide%20Training%20Example.ipynb\n\nWritten by: Stephen Welch \nProduced by: Stephen Welch, Sam Baskin, and Pranav Gundu\n\nPremium Beat IDs\nEEDYZ3FP44YX8OWTe\nMWROXNAY0SPXCMBS",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-08-10T03:03:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/qx7hirqgfuU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlZrSGZSS2V3a1d3",
+    "title": "The F=ma of Artificial Intelligence [Backpropagation, How Models Learn Part 2]",
+    "description": "Take your personal data back with Incogni! Use code WELCHLABS and get 60% off an annual plan: http://incogni.com/welchlabs\n\nNew Patreon Rewards 29:48 - own a piece of Welch Labs history! https://www.patreon.com/welchlabs\n\nBooks & Posters\nhttps://www.welchlabs.com/resources\n\nSections\n0:00 - Intro\n2:08 - No more spam calls w/ Incogni\n3:45 - Toy Model\n5:20 - y=mx+b\n6:17 - Softmax\n7:48 - Cross Entropy Loss\n9:08 - Computing Gradients\n12:31 - Backpropagation\n18:23 - Gradient Descent\n20:17 - Watching our Model Learn\n23:53 - Scaling Up\n25:45 - The Map of Language\n28:13 - The time I quit YouTube\n29:48 - New Patreon Rewards!\n\nNice Implementation for a viewer in C++:\nhttps://kirit.com/Tiny%20Classifiers/tiny-classifier.cpp\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs, Lauren Steely\n\nReferences\nWerbos, P. J. (1994). The roots of backpropagation : from ordered derivatives to neural networks and political forecasting. United Kingdom: Wiley. Newton quote is on p4, Werbos expands on the analogy on p4. \nOlazaran, Mikel. \"A sociological study of the official history of the perceptrons controversy.\" *Social Studies of Science* 26.3 (1996): 611-659. Minsky quote is on p 393.\nWidrow, Bernard. \"Generalization and information storage in networks of adaline neurons.” Self-organizing systems (1962): 435-461.\n\nHistorical Videos\nhttp://youtube.com/watch?v=FwFduRA_L6Q\nhttps://www.youtube.com/watch?v=ntIczNQKfjQ\n\nCode: \nhttps://github.com/stephencwelch/manim_videos\n\nTechnical Notes\nLarge Llama training animation shows 8/16 layers. Specifically layers 1, 2, 7, 8, 9, 10, 15, and 16. Every third attention pattern is shown, and special tokens are ignored. MLP neurons are downsampled using max pooling. Only the weights and gradients above a specific percentile based threshold are shown. Only query weights are shown going into each attention layer. \nThe coordinates of Paris are subtracted from all training examples in the 4 city example as a simple normalization - this helps with convergence. \nIn some scenes, math is happening at higher precision behind the scenes, and results are rounded, which may create apparent inconsistencies. \n\nWritten by: Stephen Welch \nProduced by: Stephen Welch, Sam Baskin, and Pranav Gundu\nSpecial thanks to: Emily Zhang\n\nPremium Beat IDs\nEEDYZ3FP44YX8OWT\nMWROXNAY0SPXCMBS",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-06-11T01:26:04Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/VkHfRKewkWw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk5yTzIwSmItaHkw",
+    "title": "The Misconception that Almost Stopped AI [How Models Learn Part 1]",
+    "description": "Take your personal data back with Incogni! Use code WELCHLABS and get 60% off an annual plan: http://incogni.com/welchlabs\n\nLoss Landscape Posters! 21:23\nhttps://www.welchlabs.com/resources/loss-landscape-poster-17x19\nhttps://www.welchlabs.com/resources/loss-landscape-poster-digital-download\n\nPoster and Book Bundle\nhttps://www.welchlabs.com/resources/loss-landscape-bundle-w-imaginary-numbers-book\n\nSpecial Matte Black Edition Poster\nhttps://www.welchlabs.com/resources/loss-landscape-poster-17x22-matte-black-special-edition\n\nWelch Labs Book\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nSections\n0:00 - Intro\n1:18 - How Incogni gets me more focus time\n3:01 - What are we measuring again? \n6:18 - How to make our loss go down? \n7:32 - Tuning one parameter\n9:11 - Tuning two parameters together\n11:01 - Gradient descent\n13:18 - Visualizing high dimensional surfaces\n15:10 - Loss Landscapes\n16:55 - Wormholes!\n17:55 - Wikitext\n18:55 - But where do the wormholes come from?\n20:00 - Why local minima are not a problem\n21:23 - Posters\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\n\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich, Mitch Jacobs\n\nReferences\nLi et al: Visualizing the Loss Landscape of Neural Nets. https://arxiv.org/abs/1712.09913\nTalking Nets: An Oral History of Neural Networks. (2000). United Kingdom: MIT Press. Hinton quote is on p376. \nGoodfellow, I., Bengio, Y., Courville, A. (2016). Deep Learning. United Kingdom: MIT Press.\nPrince, S. J. (2023). Understanding Deep Learning. United Kingdom: MIT Press.\nManim Animations: https://github.com/stephencwelch/manim_videos\n\nPremium Beat IDs\nMWROXNAY0SPXCMBS",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-05-09T20:31:41Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/NrO20Jb-hy0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjBWTEFvVkdmXzc0",
+    "title": "How DeepSeek Rewrote the Transformer [MLA]",
+    "description": "Thanks to KiwiCo for sponsoring today’s video! Go to https://www.kiwico.com/welchlabs and use code WELCHLABS for 50% off your first monthly club crate or for 20% off your first Panda Crate!\n\nMLA/DeepSeek Poster at 17:12  (Free shipping for a limited time with code DEEPSEEK):\nhttps://www.welchlabs.com/resources/mladeepseek-attention-poster-13x19\n\nLimited edition MLA Poster and Signed Book:\nhttps://www.welchlabs.com/resources/deepseek-bundle-mla-poster-and-signed-book-limited-run\n\nImaginary Numbers book is back in stock!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nSpecial Thanks to Patrons https://www.patreon.com/c/welchlabs\n\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman, Jake Ehrlich\n\nReferences\nDeepSeek-V2 paper: https://arxiv.org/pdf/2405.04434\nDeepSeek-R1 paper: https://arxiv.org/abs/2501.12948\nGreat Article by Ege Erdil: https://epoch.ai/gradient-updates/how-has-deepseek-improved-the-transformer-architecture\nGPT-2 Visualizaiton: https://github.com/TransformerLensOrg/TransformerLens\nManim Animations: https://github.com/stephencwelch/manim_videos\n\nTechnical Notes\n\n1. Note that DeepSeek-V2 paper claims a KV cache size reduction of 93.3%. They don’t exactly publish their methodology, but as far as I can tell it’s something likes this: start with Deepseek-v2 hyperparameters here: https://huggingface.co/deepseek-ai/DeepSeek-V2/blob/main/configuration_deepseek.py. num_hidden_layers=30, num_attention_heads=32, v_head_dim = 128. If DeepSeek-v2 was implemented with traditional MHA, then KV cache size would be 2*32*128*30*2=491,520 B/token. With MLA with a KV cache size of 576, we get a total cache size of 576*30=34,560 B/token. The percent reduction in KV cache size is then equal to (491,520-34,560)/492,520=92.8%. The numbers I present in this video follow the same approach but are for DeepSeek-v3/R1 architecture: https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/main/config.json. num_hidden_layers=61, num_attention_heads=128, v_head_dim = 128. So traditional MHA cache would be 2*128*128*61*2 = 3,997,696 B/token. MLA reduces this to 576*61*2=70,272 B/token. Tor the DeepSeek-V3/R1 architecture, MLA reduces the KV cache size by a factor of 3,997,696/70,272 =56.9X. \n2. I claim a couple times that MLA allows DeepSeek to generate tokens more than 6x faster than a vanilla transformer. The DeepSeek-V2 paper claims a slightly less than 6x throughput improvement with MLA, but since the V3/R1 architecture is heavier, we expect a larger lift, which is why i claim “more than 6x faster than a vanilla transformer” - in reality it’s probably significantly more than 6x for the V3/R1 architecture.\n3. In all attention patterns and walkthroughs, we’re ignoring the |beginning of sentence| token. “The American flag is red, white, and” actually maps to 10 tokens if we include this starting token, and may attention patterns do assign high values to this token. \n4. We’re ignoring bias terms matrix equations. \n5. We’re ignoring positional embeddings. These are fascinating. See DeepSeek papers and ROPE.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-03-05T18:28:29Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/0VLAoVGf_74/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmwtOUFMZTNVLUZn",
+    "title": "ChatGPT is made from 100 million of these [The Perceptron]",
+    "description": "Go to https://drinkag1.com/welchlabs to subscribe and save $20 off your first subscription of AG1! Thanks to AG1 for sponsoring today's video.\n\nImaginary Numbers book is back in stock! Update at 23:11\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nWelch Labs Posters:\nhttps://www.welchlabs.com/resources\n\nCool Interactive Perceptron Simulator made by viewer Priyangsu Banerjee!\nhttps://priyangsubanerjee.github.io/perceptron-simulator/\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman\n\nReferences\nRumelhart, D. E., Mcclelland, J. L. (1987). Parallel Distributed Processing, Volume 1: Explorations in the Microstructure of Cognition: Foundations. United Kingdom: Penguin Random House LLC.\nTalking Nets: An Oral History of Neural Networks. (2000). United Kingdom: MIT Press.\nPrince, S. J. (2023). Understanding Deep Learning. United Kingdom: MIT Press.\nCrevier, D. (1993). AI : the tumultuous history of the search for artificial intelligence. New York: Basic Books.\nCat and dog face dataset: https://www.kaggle.com/datasets/andrewmvd/animal-faces?resource=download\nMinsky, M., Papert, S. (2017). Perceptrons: An Introduction to Computational Geometry. United Kingdom: MIT Press.\nWidrow, Bernard, and Michael A. Lehr. \"30 years of adaptive neural networks: perceptron, madaline, and backpropagation.\" *Proceedings of the IEEE* 78.9 (1990): 1415-1442.\nOlazaran, Mikel. \"A sociological history of the neural network controversy.\" *Advances in computers*. Vol. 37. Elsevier, 1993. 335-425.\nWidrow, Bernard. \"Generalization and information storage in networks of adaline neurons.\" *Self-organizing systems* (1962): 435-461.\nWidrow, Bernard. \"Thinking about thinking: the discovery of the LMS algorithm.\" *IEEE Signal Processing Magazine* 22.1 (2005): 100-106.\n\nTechnical Notes\nMethod for counting neurons in ChatGPT: Starting with GPT-2 implementation here: https://github.com/karpathy/build-nanogpt/blob/master/train_gpt2.py - keys, queries, and values are implemented in Linear layers with n_embd inputs and 3*n_embd outputs, where n_embd is the embedding dimension. Output projection layer has n_embd and n_embd outputs. So a single attention layer will have ~4*n_embd neurons. GPT-3 has an embedding dimension of 12,288, so each attention layer has ~49,152 neurons. Each MLP block has n_embd inputs, 4*n_embd hidden units, and n_embd outputs, so ~5*n_embd total neurons, or ~61,440. Total neuron count for GPT-3 is then 96*(49,152+61,440)=10,616,832, ignoring initial embedding and final unembedding. Finally, GPT-4 reportedly has ~1.8 Trillion parameters (https://semianalysis.com/2023/07/10/gpt-4-architecture-infrastructure/), making it ~10x larger than GPT-3. Note that GPT-4 is reportedly a mixture of experts, and not all experts are used for each inference, so it appears that not all 1.8 trillion parameters are used for a given inference call. Assuming that ~10x the parameters means 10x the neurons, then GPT-4 should have ~100M neurons.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2025-02-01T04:58:19Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/l-9ALe3U-Fg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlVHT19FaHl3dXhj",
+    "title": "The Dark Matter of AI [Mechanistic Interpretability]",
+    "description": "Take your personal data back with Incogni! Use code WELCHLABS at the link below and get 60% off an annual plan: http://incogni.com/welchlabs\n\nWelch Labs Imaginary Numbers Book!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nWelch Labs Posters:https://www.welchlabs.com/resources\n\nSpecial Thanks to Patrons https://www.patreon.com/welchlabs\n\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley, vornska, Barry Silverman\n\nMy Gemma walkthrough notebook: https://colab.research.google.com/drive/1Y68yNr5TcHr4G5RJ0QHZhKkDe55AUkVj?usp=sharing\nMost animations made with Manim: https://github.com/3b1b/manim\n\nReferences and Further Reading\nChris Olah’s original “Dark Matter of Neural Networks” post: https://transformer-circuits.pub/2024/july-update/index.html#dark-matter\nGreat recent interview with Chris Olah: https://www.youtube.com/watch?v=ugvHCXCOmm4\nGemma Scope: https://arxiv.org/pdf/2408.05147\nExperiment with SAEs yourself here! https://www.neuronpedia.org/\nRelevant work from the Anthropic team:\nhttps://transformer-circuits.pub/2022/toy_model/index.html\nhttps://transformer-circuits.pub/2023/monosemantic-features\nhttps://transformer-circuits.pub/2024/scaling-monosemanticity/\nExcellent intro Mechanistic Interpretability: https://arena3-chapter1-transformer-interp.streamlit.app/%5B1.2%5D_Intro_to_Mech_Interp\nNeel Nanda’s Mechanistic Interpretability Explainer: https://dynalist.io/d/n2ZWtnoYHrU1s4vnFSAQ519J\nTransformer Lens: https://github.com/TransformerLensOrg/TransformerLens\nSAE Lens: https://jbloomaus.github.io/SAELens/\n\nTechnical Notes\n1. There are more advanced and more meaningful ways to map mid layer vectors to outputs, see: https://arxiv.org/pdf/2303.08112, https://neuralblog.github.io/logit-prisms/, https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens\n2. The 6x2304 matrix is actually 7x2304, we’re ignoring the /bos token.\n3. Gemma also includes positional embeddings and lots and lots of normalization layers, which we didn’t really cover\n4. I’m conflating tokens and words sometimes, in this example each word is a token, so we don’t have to worry about it too much\n5.  The “_” characters represent spaces in the token strings",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-12-23T18:39:19Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UGO_Ehywuxc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnVWS01ZLVdUclZv",
+    "title": "What is the i really doing in Schrödinger's equation?",
+    "description": "Go to https://piavpn.com/WelchLabs to get 83% off Private Internet Access with 4 months free!\n\nBook Update at 23:28!\n\nWelch Labs Imaginary Numbers Book!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nWelch Labs Posters: https://www.welchlabs.com/resources\n\nHuge thanks to Grant Sanderson for a quick manim crash course - I used manim for some of the more complex animations. \n\nSchrodinger equation numerical simulations used for animations were computed with: https://github.com/quantum-visualizations/qmsolve\n\nSpecial thanks to Patrons: Juan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann, Jason Singh, Robert Riley\n\nOrbitals Graphics Credits: \nGeek3, https://commons.wikimedia.org/wiki/File:Atomic_orbitals_spdf_m-eigenstates_and_superpositions.png, license: https://creativecommons.org/licenses/by-sa/4.0/deed.en\nPoorLeno, https://commons.wikimedia.org/wiki/File:Hydrogen_Density_Plots.png\n\nReferences\nDe Broglie, L. (1924). *Recherches sur la théorie des quanta* (Doctoral dissertation, Migration-université en cours d'affectation).\nCallender, C. (2023). Quantum mechanics: Keeping it real?. *The British Journal for the Philosophy of Science*, *74*(4), 837-851.\nDyson, F. (2009). Birds and frogs. *Notices of the AMS*, *56*(2), 212-223.\nEinstein, A. (2011). Letters on Wave Mechanics: Correspondence with H. A. Lorentz, Max Planck, and Erwin Schrödinger. United States: Philosophical Library/Open Road.\nFleisch, D. A. (2020). A Student's Guide to the Schrödinger Equation. India: Cambridge University Press.\nFleisch, D., Kinnaman, L. (2015). A Student's Guide to Waves. United Kingdom: Cambridge University Press.\nGamow, G. (2012). Thirty Years that Shook Physics: The Story of Quantum Theory. United States: Dover Publications.\nJammer, M. (1989). The Conceptual Development of Quantum Mechanics. United Kingdom: Tomash Publishers.\nKaram, R. (2020). Schrödinger's original struggles with a complex wave function. *American Journal of Physics*, *88*(6), 433-438.\nMoore, W. (2015). Schrödinger: Life and Thought. United Kingdom: Cambridge University Press.\nSchrödinger: Centenary Celebration of a Polymath. (1987). United Kingdom: Cambridge University Press.\nSchrödinger, E. (2003). Collected Papers on Wave Mechanics: Together with His Four Lectures on Wave Mechanics. United States: AMS Chelsea Pub..",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-11-23T11:23:45Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/uVKMY-WTrVo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmhCa215SjNURTBn",
+    "title": "Kepler’s Impossible Equation",
+    "description": "Why is such a simple equation so difficult to solve? Head to https://www.kiwico.com/welchlabs and use code WELCHLABS for 50% off your first monthly club crate or 20% off your first Panda Crate.\n\nWelch Labs Imaginary Numbers Book!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nWelch Labs Posters: https://www.welchlabs.com/resources\n\nHow the Bizarre Path of Mars Reshaped Astronomy: https://youtu.be/Phscjl0u6TI\n\nSupport Welch Labs on Patreon! https://www.patreon.com/welchlabs\n\nSpecial thanks to Patrons: Juan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin, Nicolas baumann\n\nLearn more about WelchLabs!\nhttps://www.welchlabs.com\nTikTok: https://www.tiktok.com/@welchlabs\nInstagram: https://www.instagram.com/welchlabs\n\nREFERENCES\nColwell, P. (1993). Solving Kepler's Equation Over Three Centuries. United Kingdom: Willmann-Bell.\nNeedham, T. (1997). Visual Complex Analysis. United Kingdom: Clarendon Press. \nBate, R. R., Mueller, D. D., White, J. E. (1971). Fundamentals of Astrodynamics. Egypt: Dover Publications.\nVallado, D. (2001). Fundamentals of Astrodynamics and Applications. Netherlands: Springer Netherlands.\nBorghi R. On the Bessel Solution of Kepler’s Equation. *Mathematics*. 2024; 12(1):154. https://doi.org/10.3390/math12010154\nTom Archibald, Craig Fraser, Ivor Grattan-Guinness, The History of Differential Equations, 1670–1950. Oberwolfach Rep. 1 (2004), no. 4, pp. 2729–2794\nFrancisco G. M. Orlando, C. Farina, Carlos A. D. Zarro, P. Terra; Kepler's equation and some of its pearls. Am. J. Phys. 1 November 2018; 86 (11): 849–858.\nArthur A. Rambaut, M.A. A Simple Method of obtaining an Approximate Solution of Kepler's Equation. *Monthly Notices of the Royal Astronomical Society*, Volume 50, Issue 5, March 1890, Pages 301–302. \nBen Coleman. How to Find the Taylor Series of an Inverse Function. https://randorithms.com/2021/08/31/Taylor-Series-Inverse.html\n\n17 Recent papers on Kepler’s equation can be found in references 2-16 here: https://www.mdpi.com/2227-7390/12/1/154",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-10-15T14:27:27Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/hBkmyJ3TE0g/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkJ1bGpIaWpBSzRv",
+    "title": "Imaginary Numbers and Astronomy",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-23T23:12:40Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/BuljHijAK4o/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Li1hdVB1VXhOV1Nj",
+    "title": "How Kepler handled his impossible equation.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-22T16:45:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/-auPuUxNWSc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnFvb2dva0EtZHNV",
+    "title": "Quick! Can you solve for E?",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-21T17:50:19Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/qoogokA-dsU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnZON0QyaG1VSnZJ",
+    "title": "Kepler’s Impossible Equation",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-20T13:26:00Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/vN7D2hmUJvI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lm9FSUl0cDRtV3hn",
+    "title": "Neural Scaling Laws full video out now!",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-13T19:01:02Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/oEIItp4mWxg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjVlcVJ1VnA2NWVZ",
+    "title": "AI can't cross this line and we don't know why.",
+    "description": "Have we discovered an ideal gas law for AI? Head to https://brilliant.org/WelchLabs/ to try Brilliant for free for 30 days and get 20% off an annual premium subscription.\n\nWelch Labs Imaginary Numbers Book!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nWelch Labs Posters: https://www.welchlabs.com/resources\n\nSupport Welch Labs on Patreon! https://www.patreon.com/welchlabs\nSpecial thanks to Patrons: Juan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti, Brian Henry, Tim Palade, Petar Vecutin\n\nLearn more about WelchLabs! https://www.welchlabs.com\nTikTok: https://www.tiktok.com/@welchlabs\nInstagram: https://www.instagram.com/welchlabs\n\nREFERENCES\nA Neural Scaling Law from the Dimension of the Data Manifold: https://arxiv.org/pdf/2004.10802\nFirst 2020 OpenAI Scaling Paper: https://arxiv.org/pdf/2001.08361\nGPT-3 Paper: https://arxiv.org/pdf/2005.14165\nSecond 202 OpenAI Scaling Paper: https://arxiv.org/pdf/2010.14701\nGoogle Deepmind “Chinchilla Scaling” Paper: https://arxiv.org/abs/2203.15556\nNice summary of Chinchilla Scaling: https://www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications\nGPT-4 Technical Report: https://arxiv.org/pdf/2303.08774\nNice Neural Scaling Laws Summary:  https://www.lesswrong.com/posts/Yt5wAXMc7D2zLpQqx/an-140-theoretical-models-that-predict-scaling-laws\nExplaining Neural Scaling Laws: https://arxiv.org/pdf/2102.06701\nHigh Cost of Training GPT-4: https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giant-ai-models-is-already-over/\nNvidia V100 FLOPs: https://lambdalabs.com/blog/demystifying-gpt-3\nNvidia V100 Original Price: [https://www.microway.com/hpc-tech-tips/nvidia-tesla-v100-price-analysis/#:~:text=Tesla GPU model,Key Points](https://www.microway.com/hpc-tech-tips/nvidia-tesla-v100-price-analysis/#:~:text=Tesla%20GPU%20model,Key%20Points)\nGreat paper on scaling up training infrastructure: https://arxiv.org/pdf/2104.04473\nEight Things to Know about LLMs: https://arxiv.org/abs/2304.00612\nEmergent Properties of LLMs: https://arxiv.org/abs/2206.07682\nTheoretical Motivation for Cross Entropy (Section 6.2): https://www.deeplearningbook.org/\n\nSome papers that appear to pass the compute efficient frontier\nhttps://arxiv.org/pdf/2206.14486\nhttps://arxiv.org/abs/2210.11399\n\nLeaked GPT-4 training info\nhttps://patmcguinness.substack.com/p/gpt-4-details-revealed\nhttps://www.semianalysis.com/p/gpt-4-architecture-infrastructure\nhttps://epochai.org/blog/tracking-large-scale-ai-models",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-13T18:09:57Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/5eqRuVp65eY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmtSVnJ3amlmbHJV",
+    "title": "LLMs cheating on benchmarks?",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-09-04T00:39:58Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/kRVrwjiflrU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmNscXpOMmxBNklv",
+    "title": "Neural Network is a Ridiculous Name.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-30T23:03:16Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/clqzN2lA6Io/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Li0ybENPajJFU0Vr",
+    "title": "How AI models see the world.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-29T19:32:10Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/-2lCOj2ESEk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlRWejVCcnNDTTZv",
+    "title": "Emergent Properties of Language Models.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-27T23:19:13Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/TVz5BrsCM6o/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjM1SXBPSy1XYU5B",
+    "title": "The efficient compute frontier.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-23T12:36:34Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/35IpOK-WaNA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LklmbVl0S0xqcXEw",
+    "title": "Alexnet in 60s.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-23T02:44:42Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/IfmYtKLjqq0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnUybEtuSGVmZW1n",
+    "title": "Neural Scaling Laws.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-22T00:16:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/u2lKnHefemg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlFUdlV3a0JaX25R",
+    "title": "Activation Atlas Posters! welchlabs.com/reaources",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-21T00:11:02Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/QTvUwkBZ_nQ/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkdqWEwzcmFwUDRZ",
+    "title": "The moment we stopped understanding AI",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-19T23:22:08Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/GjXL3rapP4Y/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmY4Q1hHN2RTLUQw",
+    "title": "The most beautiful equation in math, explained visually [Euler’s Formula]",
+    "description": "Welch Labs Imaginary Numbers Book!\nhttps://www.welchlabs.com/resources/imaginary-numbers-book\n\nBook Digital Version\nhttps://www.welchlabs.com/resources/imaginary-numbers-are-real-book-digital-download\n\nEuler’s Formula Poster!\nhttps://www.welchlabs.com/resources/eulers-formula-poster-13x19\n\nPoster Digital Version\nhttps://www.welchlabs.com/resources/eulers-formula-dark-mode-poster-digital-download\n\nSpecial thanks to the Patrons:\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti\n\nTattoo by @themutemaker - thank you! Check out her awesome work here:\nhttps://www.instagram.com/themutemaker\n\nWelch Labs\nAd free videos and exclusive perks:  https://www.patreon.com/welchlabs\nWatch on TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences & Notes\nWelch Labs Imaginary Numbers Series: https://www.youtube.com/watch?v=T647CGsuOVU\n\nExcellent History of Logarithms by Florian Cajori\n\nCajori, Florian. “History of the Exponential and Logarithmic Concepts.” *The American Mathematical Monthly*, vol. 20, no. 1, 1913, pp. 5–14. *JSTOR*, https://doi.org/10.2307/2973509. Accessed 22 July 2024.\n\nCajori, Florian. “History of the Exponential and Logarithmic Concepts.” *The American Mathematical Monthly*, vol. 20, no. 2, 1913, pp. 35–47. *JSTOR*, https://doi.org/10.2307/2974078. Accessed 22 July 2024.\n\nCajori, Florian. “History of the Exponential and Logarithmic Concepts:” *The American Mathematical Monthly*, vol. 20, no. 3, 1913, pp. 75–84. *JSTOR*, https://doi.org/10.2307/2973441. Accessed 22 July 2024.\n\nCajori, Florian. “History of the Exponential and Logarithmic Concepts.” *The American Mathematical Monthly*, vol. 20, no. 4, 1913, pp. 107–17. *JSTOR*, https://doi.org/10.2307/2972960. Accessed 22 July 2024.\n\nNice History of Euler’s Formula\nSandifer, Ed. *e, pi and i: Why is “Euler” in the Euler identity?* http://eulerarchive.maa.org/hedi/HEDI-2007-08.pdf\n\nMuch of the visual approach presented here comes from Needham’s incredible book: \nNeedham, T. (1997). Visual Complex Analysis. United Kingdom: Clarendon Press.\n\nOther books referenced\nMaor, E. (2011). E: The Story of a Number. Ukraine: Princeton University Press.\nPenrose, R. (2021). The Road to Reality: A Complete Guide to the Laws of the Universe. United Kingdom: Knopf Doubleday Publishing Group.\nDunham, W. (2022). Euler: The Master of Us All. United States: AMM Press.\nWilson, R. (2019). Euler's Pioneering Equation: The Most Beautiful Theorem in Mathematics. United Kingdom: Oxford University Press.\nNahin, P. J. (2010). An Imaginary Tale: The Story of √-1. Ukraine: Princeton University Press.\nStillwell, J. (2013). Mathematics and Its History. United Kingdom: Springer New York.\n\nEuler’s Amazing 1747 Paper\nEuler, Leonard. *\"Sur les logarithmes des nombres négatifs et imaginaires”* Written in 1747, but not published until 1862. Euler did publish a similar paper in 1749. See Cajori #3 above. \n\nEnglish Translation: https://scholarlycommons.pacific.edu/cgi/viewcontent.cgi?filename=0&article=1806&context=euler-works&type=additional\n\nNote on Benroulli’s area of sectors\nEuler’s counterexample using Bernoulli’s sector area comes in a couple flavors. The one presented in his 1747 paper \"Sur les logarithmes des nombres négatifs et imaginaires” is a bit different than an earlier example in a letter to Bernoulli. I chose the earlier example for clarity. See Cajori vol 2 and Sandifer. \n\nFeynman Lectures - Algebra\nhttps://www.feynmanlectures.caltech.edu/I_22.html",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-08-12T14:24:09Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/f8CXG7dS-D0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlVaRGlHb29GczU0",
+    "title": "The moment we stopped understanding AI [AlexNet]",
+    "description": "Thanks to KiwiCo for sponsoring today's video! Go to https://www.kiwico.com/welchlabs and use code WELCHLABS for 50% off your first month of monthly lines and/or for 20% off your first Panda Crate.\n\nActivation Atlas Posters!\nhttps://www.welchlabs.com/resources/5gtnaauv6nb9lrhoz9cp604padxp5o\nhttps://www.welchlabs.com/resources/activation-atlas-poster-mixed5b-13x19\nhttps://www.welchlabs.com/resources/large-activation-atlas-poster-mixed4c-24x36\nhttps://www.welchlabs.com/resources/activation-atlas-poster-mixed4c-13x19\n\nSpecial thanks to the Patrons:\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti\n\nWelch Labs\nAd free videos and exclusive perks:  https://www.patreon.com/welchlabs\nWatch on TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nAlexNet Paper\nhttps://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf\n\nOriginal Activation Atlas Article- explore here - Great interactive Atlas! https://distill.pub/2019/activation-atlas/\nCarter, et al., \"Activation Atlas\", Distill, 2019.\n\nFeature Visualization Article: https://distill.pub/2017/feature-visualization/\n`Olah, et al., \"Feature Visualization\", Distill, 2017.`\n\nGreat LLM Explainability work: https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html\nTempleton, et al., \"Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet\", Transformer Circuits Thread, 2024.\n\n“Deep Visualization Toolbox\" by Jason Yosinski video inspired many visuals: \nhttps://www.youtube.com/watch?v=AgkfIQ4IGaM\n\nGreat LLM/GPT Intro paper\nhttps://arxiv.org/pdf/2304.10557\n\n3B1Bs GPT Videos are excellent, as always:\nhttps://www.youtube.com/watch?v=eMlx5fFNoYc\nhttps://www.youtube.com/watch?v=wjZofJX0v4M\n\nAndrej Kerpathy's walkthrough is amazing:\nhttps://www.youtube.com/watch?v=kCc8FmEb1nY\n\nGoodfellow’s Deep Learning Book\nhttps://www.deeplearningbook.org/\n\nOpenAI’s 10,000 V100 GPU cluster (1+ exaflop) https://news.microsoft.com/source/features/innovation/openai-azure-supercomputer/\n\nGPT-3 size, etc: Language Models are Few-Shot Learners, Brown et al, 2020. \n\nUnique token count for ChatGPT: https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken \n\nGPT-4 training size etc, speculative:\nhttps://patmcguinness.substack.com/p/gpt-4-details-revealed\nhttps://www.semianalysis.com/p/gpt-4-architecture-infrastructure\n\nHistorical Neural Network Videos\nhttps://www.youtube.com/watch?v=FwFduRA_L6Q\nhttps://www.youtube.com/watch?v=cNxadbrN_aI\n\nErrata\n1:40 should be: \"word fragment is appended to the end of the original input\". Thanks for Chris A for  finding this one.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-07-01T19:09:21Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UZDiGooFs54/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk1hWmo4bjhXemZv",
+    "title": "Modern Science.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-18T23:46:33Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/MaZj8n8Wzfo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lno2b2x1aVM4SW5r",
+    "title": "Final plot twist.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-17T23:37:54Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/z6oluiS8Ink/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmRjNzcxSVNiRHJV",
+    "title": "Awakened from a sleep.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-15T23:27:43Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/dc771ISbDrU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkNOa0pleXR0S3Zv",
+    "title": "Magic Number.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-14T23:51:13Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/CNkJeyttKvo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlVKcHp2NGpEcG9V",
+    "title": "Creating the oval.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-13T23:52:00Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UJpzv4jDpoU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjM2SXhnZFJNU25V",
+    "title": "The Egg.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-12T23:34:47Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/36IxgdRMSnU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk5LZVYtRHhuZlV3",
+    "title": "The final nail in the circular coffin.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-11T23:43:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/NKeV-DxnfUw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmlpM1lkRzNScnlj",
+    "title": "Circles must die.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-10T23:07:53Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/ii3YdG3Rryc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lmd6ZWg2X0ZKTjBN",
+    "title": "Mathematically.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-09T23:30:10Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/gzeh6_FJN0M/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnlpNGE5WWdMSDh3",
+    "title": "Kepler on a mission",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-08T19:07:50Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/yi4a9YgLH8w/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lm5rMnBtQllxVjVn",
+    "title": "A Powerful Prediction.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-08T00:25:18Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/nk2pmBYqV5g/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmZPRE5VUmdnaGh3",
+    "title": "40% error 😳",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-06T23:43:06Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/fODNURgghhw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lkl3TlNSZjFtLVFz",
+    "title": "Side View",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-05T23:00:40Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/IwNSRf1m-Qs/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmxBMUFHWnR4VXJR",
+    "title": "A New Species",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-04T23:47:01Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/lA1AGZtxUrQ/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlpmOGZ0blp0VWxn",
+    "title": "Full video now live!",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-06-03T19:54:48Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Zf8ftnZtUlg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk1wckpONXRlUXhj",
+    "title": "How the Bizarre Path of Mars Reshaped Astronomy [Kepler's Laws Part 2]",
+    "description": "Tycho Brahe Doppelmayr Poster: https://www.welchlabs.com/resources/tycho-brahe-doppelmayr-poster-13x15\n\nTycho Brahe Cellarius Poster: https://www.welchlabs.com/resources/tycho-brahe-cellarius-poster-13x16\n\nEclipse Posters! https://www.welchlabs.com/resources\n\nThis is the second of a two part series - part one here: https://www.youtube.com/watch?v=Phscjl0u6TI&feature=youtu.be\n\nSpecial thanks to the Patrons:\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures, Matias Forti\n\nWelch Labs\nAd free videos and exclusive perks:  https://www.patreon.com/welchlabs\nWatch on TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nOn the Shoulders of Giants: The Great Works of Physics and Astronomy. (2003). Kiribati: Penguin.\nKoestler, A. (2017). The Sleepwalkers: A History of Man's Changing Vision of the Universe. United Kingdom: Penguin Books Limited.\nhttps://en.wikipedia.org/wiki/History_of_Mars_observation\nhttps://www.keplersdiscovery.com/index.html\nThe Cambridge Concise History of Astronomy. (1999). United Kingdom: Cambridge University Press.\nMazer, A. (2011). Shifting the Earth: The Mathematical Quest to Understand the Motion of the Universe. Germany: Wiley.\nVoelkel, J. R. (2021). The Composition of Kepler's Astronomia Nova. United Kingdom: Princeton University Press.\nhttps://stellarium.org/\nKepler, J. (2015). Astronomia Nova. United States: Green Lion Press.\nStephenson, B. (2012). Kepler’s Physical Astronomy. Switzerland: Springer New York.\nBrahe, T., Dreyer, J. L. E. (1972). Tychonis Brahe Dani Opera omnia. Netherlands: Swets & Zeitlinger.\nhttps://dn790003.ca.archive.org/0/items/Astronomianovaa00Kepl/Astronomianovaa00Kepl.pdf\nFeynman Lecture on Gravity: https://www.feynmanlectures.caltech.edu/I_07.html",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-30T10:53:59Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/MprJN5teQxc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lkg4TTc0VUc1Zk9v",
+    "title": "Link to posters in bio! welchlabs.com/resources",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-24T23:17:28Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/H8M74UG5fOo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjVmcHlfR25yaTMw",
+    "title": "Tycho Dies.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-23T22:25:49Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/5fpy_Gnri30/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lnk1QWFRa3BSX3cw",
+    "title": "For Kepler’s model to work…",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-22T23:21:37Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/y5AaQkpR_w0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LklGODBBTHFJc2xv",
+    "title": "The equant.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-22T02:08:06Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/IF80ALqIslo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnJmR0hmYzFuNUpJ",
+    "title": "Kepler Began.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-20T23:01:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/rfGHfc1n5JI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Li1Db3hURmM2TGc0",
+    "title": "Fixing the Sun.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-20T00:25:40Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/-CoxTFc6Lg4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmRZekIzRXk0Y2RB",
+    "title": "Retrograde motion",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-18T23:53:26Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/dYzB3Ey4cdA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LktwbXJRZGFRakdn",
+    "title": "The Ptolemaic Model",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-18T01:00:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/KpmrQdaQjGg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmVBLWVZMFlfaTVN",
+    "title": "Kepler’s Origin",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-16T23:33:32Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/eA-eY0Y_i5M/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjVZc2l5dmtJOTY0",
+    "title": "Tycho’s Data",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-15T20:40:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/5YsiyvkI964/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lnc0MldqTkdPcnpv",
+    "title": "This is Mars",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-14T17:44:21Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/w42WjNGOrzo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlBoc2NqbDB1NlRJ",
+    "title": "How the Bizarre Path of Mars Reshaped Astronomy [Kepler's Laws Part 1]",
+    "description": "Sign up for a 14-day free trial and enjoy all the amazing features MyHeritage has to offer: https://bit.ly/WelchLabs\n\nTycho Brahe Cellarius Poster: https://www.welchlabs.com/resources/tycho-brahe-cellarius-poster-13x16\nTycho Brahe Doppelmayr Poster: https://www.welchlabs.com/resources/tycho-brahe-doppelmayr-poster-13x15\nEclipse Posters! https://www.welchlabs.com/resources\n\nSpecial thanks to the Patrons:*\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati, Dominic Beaumont, Shannon Prater, Ubiquity Ventures\n\nWelch Labs\nAd free videos and exclusive perks:  https://www.patreon.com/welchlabs\nWatch on TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nOn the Shoulders of Giants: The Great Works of Physics and Astronomy. (2003). Kiribati: Penguin.\nKoestler, A. (2017). The Sleepwalkers: A History of Man's Changing Vision of the Universe. United Kingdom: Penguin Books Limited.\nhttps://en.wikipedia.org/wiki/History_of_Mars_observation\nhttps://www.keplersdiscovery.com/index.html\nThe Cambridge Concise History of Astronomy. (1999). United Kingdom: Cambridge University Press.\nMazer, A. (2011). Shifting the Earth: The Mathematical Quest to Understand the Motion of the Universe. Germany: Wiley.\nVoelkel, J. R. (2021). The Composition of Kepler's Astronomia Nova. United Kingdom: Princeton University Press.\nhttps://stellarium.org/\nKepler, J. (2015). Astronomia Nova. United States: Green Lion Press.\nStephenson, B. (2012). Kepler’s Physical Astronomy. Switzerland: Springer New York.\nBrahe, T., Dreyer, J. L. E. (1972). Tychonis Brahe Dani Opera omnia. Netherlands: Swets & Zeitlinger.\nhttps://dn790003.ca.archive.org/0/items/Astronomianovaa00Kepl/Astronomianovaa00Kepl.pdf",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-05-08T19:29:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Phscjl0u6TI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjBmZ2JNVEMzMEY4",
+    "title": "How Rare is the April 2024 Eclipse?",
+    "description": "Eclipse Posters! https://www.welchlabs.com/resources\n\nSpecial thanks to the Patrons:\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati\n\nWelch Labs\nSupport on Patreon receive exclusive benefits: https://www.patreon.com/welchlabs\nAmazon Logarithms Reading List: https://www.amazon.com/shop/welchlabs\nWatch TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nThanks to Fred Espenak for all the resources and answering my emails, he really is Mr. Eclipse!\nhttps://www.mreclipse.com/\nhttps://eclipse.gsfc.nasa.gov/solar.html\nhttps://www.amazon.com/Five-Millennium-Canon-Solar-Eclipses/dp/1941983391\nhttps://en.wikipedia.org/wiki/Saros_(astronomy)\nhttps://en.wikipedia.org/wiki/Inex\nCanon of eclipses, 1887. Theodor von Oppolzer. \nPeriodicity and Variation of Solar (and Lunar) Eclipses, Georg van den Bergh, 1955\nSaros Cycle Dates and Related Babylonian Astronomical Texts A Aaboe, J.P. Britton, J.A. Henderson, O. Neugebauer, and AJ. Sachs. Text D (\"Solar Saros\") B.M. 36754 (80-6-17, 48 + 564)\n\nCredits\nAnnular Solar Eclipse Image: https://commons.wikimedia.org/wiki/File:2023_Annual_Eclipse.jpg\nTotal Solar Eclipse Image: Luc Viator https://lucnix.be/\nOriginal Saros Inex Panorama Design by Georg van den Bergh\n\nErrata\n8:10 Oppolzer dates should be 1841-1886",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-04-07T00:57:26Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/0fgbMTC30F8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlBEWGVyYmg5QjFZ",
+    "title": "This Book Should Have Changed Math Forever",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-17T17:07:15Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/PDXerbh9B1Y/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkE5V1lfSFpVSzhR",
+    "title": "This book should have changed mathematics forever",
+    "description": "This video’s sponsor Brilliant is a great way to learn more. You can try Brilliant for free for thirty days by visiting https://brilliant.org/WelchLabs and the first 200 subscribers receive 20 percent off Brilliant's annual premium subscription.\n\nModifications to Burgi’s Book\nI made a couple changes to Burgi’s tables to make this video easier to follow. Burgi’s red numbers are scaled by a factor of ten - I removed this in some locations - also his tables didn’t include any decimal places - this notation had not been developed yet. There are no decimal places in his original work - I added the decimal points in some locations for clarity. \n\nBook Recommendation\nSections of this video are based on a terrific book by Klaus Truemper - despite it’s terrible cover, it’s a great read with an original viewpoint, and we only covered a small portion here - you can buy a copy on my amazon storefront here: https://amzn.to/3u2Rt7x\n\nSpecial thanks to the Patrons\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati\n\nWelch Labs\nSupport on Patreon receive exclusive benefits: https://www.patreon.com/welchlabs\n\nAmazon Logarithms Reading List: https://www.amazon.com/shop/welchlabs\n\nWatch TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nThe Daring Invention of Logarithm Tables - Klaus Truemper\nThe History of Mathematical Tables: From Sumer to Spreadsheets - Martin Campbell-Kelly\nDescription of the Wonderful Canon of Logarithms - John Napier\nJost Bürgi's Aritmetische und Geometrische Progreß Tabulen - Kathleen Clark\nArithmetic and Geometric Progression Tables - Jost Burgi 1620",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-17T16:53:35Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/A9WY_HZUK8Q/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlNjNDU5NVdKSENj",
+    "title": "The Most useful Curve In mathematics",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-05T11:36:43Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Sc4595WJHCc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk9qSXdDT2V2VWV3",
+    "title": "The Most Useful Curve in Mathematics [Logarithms]",
+    "description": "This video’s sponsor Brilliant is a great way to learn more. You can try Brilliant for free for thirty days by visiting  https://brilliant.org/WelchLabs and the first 200 subscribers receive 20 percent off Brilliant's annual premium subscription.\n\nSpecial thanks to the Patrons:\nJuan Benet, Ross Hanson, Yan Babitski, AJ Englehardt, Alvin Khaled, Eduardo Barraza, Hitoshi Yamauchi, Jaewon Jung, Mrgoodlight, Shinichi Hayashi, Sid Sarasvati\n\nWelch Labs\nSupport on Patreon receive exclusive benefits: https://www.patreon.com/welchlabs\nAmazon Logarithms Reading List: https://www.amazon.com/shop/welchlabs\nWatch TikTok: https://www.tiktok.com/@welchlabs\nLearn More or Contact: https://www.welchlabs.com/\nInstagram: https://www.instagram.com/welchlabs\nX: https://twitter.com/welchlabs\n\nReferences\nThe History of Mathematical Tables: From Sumer to Spreadsheets - Martin Campbell-Kelly\nNavigation - James Pryde\ne: the story of a number  - Eli Maor\nDescription of the Wonderful Canon of Logarithms - John Napier\nConstruction of the Wonderful Canon of Logarithms - John Napier\nArithmetical Logarithmica - Henry Briggs, translated by Ian Bruce https://www.17centurymaths.com/contents/albriggs.html\nThe Daring Invention of Logarithm Tables - Klaus Truemper\nHenry Briggs MacTutor: https://mathshistory.st-andrews.ac.uk/Biographies/Briggs/\nA reconstruction of the tables of Briggs’ Arithmetica logarithmica - Denis Roegel\nA reconstruction of the tables of Napier’s descriptio (1614) - Denis Roegel\nThe HP-35 Design, A Case Study in Innovation - David S. Cochran https://www.hpmemoryproject.org/wb_pages/d_cochran_01.htm\nThe Polyphase Slide Rule A Self Teaching Manual - William E. Breckenridge\nWhen Slide Rules Ruled - Cliff Stoll",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-03T20:57:14Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/OjIwCOevUew/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LktIUjVJRXZWcTdJ",
+    "title": "Quick!",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-02T12:47:18Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/KHR5IEvVq7I/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lmo4RUViVUNjMTlF",
+    "title": "Quick!",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2024-02-01T11:37:41Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/j8EEbUCc19E/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlcwNmc3Z0lmd1JF",
+    "title": "Oppenheimer's Gamble - The Plutonium Crisis",
+    "description": "Oppenheimer reading list\nhttps://www.amazon.com/shop/welchlabs\n\nOpening scenes from Oppenheimer: https://www.oppenheimermovie.com\n\nReferences\nThe Trinity High-Explosive Implosion System: The Foundation for Precision Explosive Applications: https://www.tandfonline.com/doi/full/10.1080/00295450.2021.1913954\n\nCritical Assembly: A Technical History of Los Alamos during the Oppenheimer Years, 1943–1945. \n\nWelch Labs\nhttps://www.patreon.com/welchlabs\nhttps://www.tiktok.com/@welchlabs\nhttps://www.welchlabs.com/\n\nErrata\nThank to Ferenci Tamás for catching an error - the image shown at 5:00 is not of the lensed implosion bomb but a later 72-block Y-1222 design.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-22T20:57:15Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/W06g7gIfwRE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkVFbkFMWk85anFV",
+    "title": "Oppenheimer reading list book 10. Full list at www.amazon.com/shop/welchlabs",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-19T21:26:21Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/EEnALZO9jqU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnZyejNQV2Fkdnd3",
+    "title": "Oppenheimer reading list book 9. Full list at www.amazon.com/shop/welchlabs",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-17T23:25:08Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/vrz3PWadvww/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lm5ELURjbzd4U1NV",
+    "title": "Oppenheimer's Apocalypse Math",
+    "description": "References\nLos Alamos Report 602: https://sgp.fas.org/othergov/doe/lanl/docs1/00329010.pdf\nThe bomb - the end of the world? http://large.stanford.edu/courses/2015/ph241/chung1/docs/buck.pdf\nUltimate Catastrophe? https://www.tandfonline.com/doi/abs/10.1080/00963402.1976.11455623?journalCode=rbul20\n\n\nWelch Labs\nhttps://www.patreon.com/welchlabs\nhttps://www.tiktok.com/@welchlabs\nhttps://www.welchlabs.com/",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-16T16:22:02Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/nD-Dco7xSSU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmtVZ0NST1AwZjFZ",
+    "title": "Oppenheimer reading list book 8. Full list at www.amazon.com/shop/welchlabs",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-15T22:49:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/kUgCROP0f1Y/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjRCMFdFZTFKZ1dJ",
+    "title": "Oppenheimer reading list book 7. Full list at www.amazon.com/shop/welchlabs",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-15T14:13:47Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/4B0WEe1JgWI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjlNdEFzdDVXM1lF",
+    "title": "Oppenheimer reading list book 7. Full list at www.amazon.com/shop/welchlabs. #oppenheimer",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-15T14:13:05Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/9MtAst5W3YE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjVJWVNITVMyVlNB",
+    "title": "Oppenheimer reading list book 6. Full list at www.amazon.com/shop/welchlabs",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-13T21:10:24Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/5IYSHMS2VSA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LklrSjZpd241VTZN",
+    "title": "#oppenheimer #readinglist #book  number five. Full list at www.amazon.com/shop/welchlabs.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-12T21:47:00Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/IkJ6iwn5U6M/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LklhTXJOQTE5M0NZ",
+    "title": "Oppenheimer reading list book number four. #oppenheimer",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-11T22:28:36Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/IaMrNA193CY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnhTbW9ibU9EZmJ3",
+    "title": "July 10, 2023",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-10T22:45:21Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/xSmobmODfbw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmpfZ1VGU3d0MVNR",
+    "title": "Oppenheimer reading list book number two.",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-10T00:55:00Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/j_gUFSwt1SQ/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkJwdHNISEQ1eURn",
+    "title": "A speck of matter god did not welcome into creation",
+    "description": "TECHNICAL FOOTNOTE\nPlutonium has been discovered in trace amounts in nature under highly unusual geologic circumstances: https://www.epa.gov/radiation/radionuclide-basics-plutonium#plutoniumsources\n\nLINKS\nOppenheimer reading list: https://www.amazon.com/shop/welchlabs\nPatreon: https://www.patreon.com/welchlabs\nTikTok: https://www.tiktok.com/@welchlabs\nOther Stuff: https://www.welchlabs.com/",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-08T22:57:57Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/BptsHHD5yDg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlJmOFlmN29oQWF3",
+    "title": "Oppenheimer reading list part one: The Making of the Atomic Bomb by Richard Rhodes",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-08T13:27:07Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Rf8Yf7ohAaw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjNWb0QzTG52OFlZ",
+    "title": "Bohr solves mystery; invents bomb",
+    "description": "Niels Bohr’s hater-inspired flash of insight lead him to the perfect material to build the atomic bomb. \n\nLINKS\nhttps://www.patreon.com/welchlabs\nhttps://www.tiktok.com/@welchlabs\nhttps://www.welchlabs.com/",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-07-01T11:39:38Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/3VoD3Lnv8YY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkZJZ0lWTzlHdmxB",
+    "title": "Why are atomic weights not round?",
+    "description": "",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-06-29T00:15:21Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/FIgIVO9GvlA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnktRnVxcHRUWm93",
+    "title": "The Most Dangerous Rock in the World",
+    "description": "The most Dangerous Rock in the World. \n\nLINKS\nhttps://www.patreon.com/welchlabs\nhttps://www.tiktok.com/@welchlabs\nhttps://www.welchlabs.com/",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-06-24T13:57:24Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/y-FuqptTZow/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlFWUHNMbHotdGg4",
+    "title": "It's been a while...",
+    "description": "New videos coming soon! \n\nTikTok: https://www.tiktok.com/@welchlabs\nPatreon: https://www.patreon.com/welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2023-06-21T22:58:52Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/QVPsLlz-th8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkRJQUtMMHM0TXpz",
+    "title": "Self-Driving Cars [S1E4: RALPH]",
+    "description": "PATREON: https://www.patreon.com/welchlabs\nTWITTER: @welchlabs\nMORE: http://www.welchlabs.com\nCODE: https://github.com/stephencwelch/self_driving_cars\n\nNO HANDS ACROSS AMERICA\nhttps://www.cs.cmu.edu/~tjochem/nhaa/nhaa_home_page.html\n\nRALPH\nhttps://ieeexplore.ieee.org/document/528333\nhttps://www.ri.cmu.edu/pub_files/pub2/pomerleau_dean_1995_2/pomerleau_dean_1995_2.pdf\nhttps://patents.google.com/patent/US5675489A/en?inventor=dean+pomerleau&oq=dean+pomerleau\n\nDRIVING VIDEOS\nKITTI Dataset: http://www.cvlibs.net/datasets/kitti/index.php\nBerkeley Dataset: https://bair.berkeley.edu/blog/2018/05/30/bdd/\n\nVIDEO REFERENCES\nhttps://www.youtube.com/watch?v=WZorfXa5pBc\nhttps://www.youtube.com/watch?v=bdQ5rsVgPuk\nhttps://www.youtube.com/watch?v=QFpBtOG87ak\nhttps://www.youtube.com/watch?v=5-acCtyKf7E\nhttps://www.youtube.com/watch?v=ntIczNQKfjQ\nhttps://www.youtube.com/watch?v=B8R148hFxPw\nhttps://www.youtube.com/watch?v=wTDG5gjwPGo\nhttps://www.youtube.com/watch?v=C9G6JRUmg_A\nhttps://www.youtube.com/watch?v=rV0H7u6tmIk\nhttps://www.youtube.com/watch?v=Dtj9J1A-PMk\n\nMUSIC\nhttps://www.premiumbeat.com/royalty-free-tracks/girl-power\nhttps://www.premiumbeat.com/royalty-free-tracks/jazz-manouche-forever\nhttps://www.premiumbeat.com/royalty-free-tracks/out-of-the-woods\nhttps://www.premiumbeat.com/royalty-free-tracks/above-the-ocean\n\n\nSPECIAL THANKS TO\nTony Fast\nKrish Ravindranath\nKarthik Naga\nDean Pomerleau\nChuck Thorpe\n\n- AND - \nSid Sarasvati\nRoss Hanson\nYana Chernobilsky\nVin Soma\nAntoine Pintout\nJaewon Jung\nRaphael J Vasquez\nAJ Englehardt\nNate Fuller\nHitoshi Yamauchi",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2019-02-09T13:16:41Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/DIAKL0s4Mzs/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnlhWUVSMk04ZGNz",
+    "title": "Self-Driving Cars [S1E3: AI Failure?]",
+    "description": "PATREON: https://www.patreon.com/welchlabs\nTWITTER: @welchlabs\nMORE: http://www.welchlabs.com\nCODE: https://github.com/stephencwelch/self_driving_cars\n\nFURTHER READING + REFEERENCES\nFor a bayesian approach to the same reliability testing math: https://stats.stackexchange.com/questions/73645/how-do-you-derive-the-success-run-theorem-from-the-traditional-form-of-bayes-the\nRand Report: https://www.rand.org/pubs/research_reports/RR1478.html\nZeiler and Fungus 2013: https://arxiv.org/abs/1311.2901\nWHO top 10 causes of death: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death\nWHO injuries and violence facts: https://apps.who.int/iris/bitstream/handle/10665/44288/9789241599375_eng.pdf%3Bjsessionid=7558B4BDC59A52BB94AEC68A0AD79EE8?sequence=1\nBojarski et al: https://arxiv.org/abs/1704.07911\nDean Pomerleau: http://www.cs.cmu.edu/~bhamner/neuralNetworksProject/pomerleau_dean.pdf\nDean Pomerleau: https://www.ri.cmu.edu/pub_files/pub3/pomerleau_dean_1991_1/pomerleau_dean_1991_1.pdf\nDean Pomerleau: https://www.ri.cmu.edu/publications/life-in-the-fast-lane-the-evolution-of-an-adaptive-vehicle-control-system/\nNvidia End to End: https://arxiv.org/abs/1604.07316\nWay ChauffeurNet: https://arxiv.org/abs/1812.03079\n\n\nVIDEO REFERENCES\nAmnon Shashua Talk: https://www.youtube.com/watch?v=GCMXXXmxG-I\nNAVLAB: https://www.youtube.com/watch?v=rV0H7u6tmIk\n\nMUSIC\nhttps://www.premiumbeat.com/royalty-free-tracks/jazz-manouche-forever\nhttps://www.premiumbeat.com/royalty-free-tracks/out-of-the-woods\nhttps://www.premiumbeat.com/royalty-free-tracks/wanderer\n\nSPECIAL THANKS TO\nTony Fast\nKrish Ravindranath\nKarthik Naga\nAlex Mones\nMichael Grabchak\n\n- AND - \nSid Sarasvati\nRoss Hanson\nVin Soma\nAntoine Pintout\nJaewon Jung\nRaphael J Vasquez\nAJ Englehardt\nNate Fuller\nHitoshi Yamauchi",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2019-02-02T13:50:05Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/yaYER2M8dcs/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkgwaWdpUDZIZzFr",
+    "title": "Self Driving Cars [S1E2: ALVINN]",
+    "description": "PATREON: https://www.patreon.com/welchlabs\nTWITTER: @welchlabs\nMORE: http://www.welchlabs.com\nCODE: https://github.com/stephencwelch/self_driving_cars\n\nWelch Labs on backpropogation\nhttps://www.youtube.com/watch?v=GlcnxUlrtek\n\nGreat 3B1B Video on backpropogation\nhttps://www.youtube.com/watch?v=tIeHLnjs5U8\n\nFURTHER READING\nBackpropagation: https://www.nature.com/articles/323533a0\nALVINN: http://www.cs.cmu.edu/afs/cs/Web/People/bhamner/neuralNetworksProject/pomerleau_dean.pdf\nALVINN: https://pdfs.semanticscholar.org/df76/59b147d04186a4885cdbe10fcf60e2ffca4e.pdf\nALVINN: http://papers.nips.cc/paper/95-alvinn-an-autonomous-land-vehicle-in-a-neural-network.pdf\n\n\nVIDEO REFERENCES\nNvidia End-to-End: https://www.youtube.com/watch?v=qhUvQiKec2U\nAmnon Shashua: https://www.youtube.com/watch?v=GCMXXXmxG-I\nChris Urmso: https://www.youtube.com/watch?v=BtgBySRrN0Q\nNavlab: https://www.youtube.com/watch?v=QFpBtOG87ak\nMore Navlab: https://www.youtube.com/watch?v=ntIczNQKfjQ\nMore more Navlab:https://www.youtube.com/watch?v=QFpBtOG87ak\nMore more more navlab: https://www.youtube.com/watch?v=rV0H7u6tmIk\nYou guess it, more navlab: https://www.youtube.com/watch?v=5-acCtyKf7E\nNavlab on the news: https://www.youtube.com/watch?v=IaoIqVMd6tc\n\nMUSIC\nhttps://www.premiumbeat.com/royalty-free-tracks/vultures\nhttps://www.premiumbeat.com/royalty-free-tracks/wanderer\nhttps://www.premiumbeat.com/royalty-free-tracks/girl-power\nhttps://www.premiumbeat.com/royalty-free-tracks/language-2\n\nSPECIAL THANKS TO\nTony Fast\nKrish Ravindranath\nKarthik Naga\nDean Pomerleau\n\n- And - \nSid Sarasvati\nRoss Hanson\nYana Chernobilsky\nVin Soma \nAntoine Pintout\nJaewon Jung\nRaphael J Vasquez\nAJ Englehardt\nNate Fuller",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2019-01-19T15:01:52Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/H0igiP6Hg1k/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmNFeEpiYndPZmN3",
+    "title": "Self Driving Cars [S1E1: The ALV]",
+    "description": "PATREON: https://www.patreon.com/welchlabs\nTWITTER: @welchlabs\nMORE: http://www.welchlabs.com\nCODE: https://github.com/stephencwelch/self_driving_cars\n\nFURTHER READING\nOriginal ALV Paper: http://www.cs.ucsb.edu/~mturk/Papers/ALV.pdf\n\nGreat Book on SCI: https://www.amazon.com/Strategic-Computing-Machine-Intelligence-1983-1993/dp/0262529262/ref=sr_1_1?ie=UTF8&qid=1547071120&sr=8-1&keywords=strategic+computing\n\nGreat book on the history of AI: https://www.amazon.com/Ai-Daniel-Crevier/dp/0465001041/ref=sr_1_1?ie=UTF8&qid=1547071150&sr=8-1&keywords=ai+the+tumultuous+history+of+the+search+for+artificial+intelligence\n\nVIDEO REFERENCES\nElon Musk at TED: https://www.youtube.com/watch?v=NcqI76Z4t1A\nCadillac Super Cruise: https://www.youtube.com/watch?v=_rxW68ADldI\nTesla Perception: https://www.youtube.com/watch?v=VG68SKoG7vE\nWaymo Perception: https://www.youtube.com/watch?v=B8R148hFxPw\nChris Urmson TED talk: https://www.youtube.com/watch?v=tiwVMrTLUWg\n\nMUSIC\nhttps://www.premiumbeat.com/royalty-free-tracks/girl-power\nhttps://www.premiumbeat.com/royalty-free-tracks/out-of-the-woods\nhttps://www.premiumbeat.com/royalty-free-tracks/language-2\n\nSPECIAL THANKS TO\nTony Fast\nKrish Ravindranath\nKarthik Naga\nCharles Young\nChang Lee\nMathew Turk\n\n- And - \nVin Soma\nRaphael J Vasquez\nNate Fuller",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2019-01-11T14:26:53Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/cExJbbwOfcw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkJLb1QtTnpfclpr",
+    "title": "How to Science [Part 6: Secret Math in Your Brain]",
+    "description": "supporting pdf:\nhttp://www.welchlabs.com/guides\n\nsupport Welch Labs:\nhttps://www.patreon.com/welchlabs\n\nMIT Video:\nhttp://news.mit.edu/2016/music-tastes-cultural-not-hardwired-brain-0713",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2018-03-22T14:54:05Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/BKoT-Nz_rZk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnNUU05UV0tHa2J3",
+    "title": "How to Science [Part 5: Mathematics]",
+    "description": "pdf: http://www.welchlabs.com/guides\n\nsupport welch labs:\nhttps://www.patreon.com/welchlabs\n\nmusic:\nhttps://www.premiumbeat.com/royalty-free-tracks/jazz-manouche-forever\nhttps://www.premiumbeat.com/royalty-free-tracks/out-of-the-wood\nshttps://www.premiumbeat.com/royalty-free-tracks/among-the-hills",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2018-01-29T20:15:04Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/sTSNTWKGkbw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Llk3a0NKdFdGcFVV",
+    "title": "How To Science [Part 4: Science]",
+    "description": "PDF: http://www.welchlabs.com/guides\n\nSupport Welch Labs: www.patreon.com/welchlabs\n\nMusic:\nhttps://www.premiumbeat.com/royalty-free-tracks/jazz-manouche-forever\nhttps://www.premiumbeat.com/royalty-free-tracks/out-of-the-woods\nhttps://www.premiumbeat.com/royalty-free-tracks/truth-to-tell",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-12-24T15:14:38Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Y7kCJtWFpUU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmItQ1BRZFdVLXNJ",
+    "title": "How to Science [Part 3: Experiments]",
+    "description": "PDF: http://www.welchlabs.com/guides/\n\nSupport Welch Labs: https://www.patreon.com/welchlabs\n\nMusic:\nhttps://premiumbeat.com/royalty_free_music/songs/jazz-manouche-forever\nhttps://premiumbeat.com/royalty_free_music/songs/razer-trap",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-12-10T20:37:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/b-CPQdWU-sI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lkk3cmx6a1U3emJr",
+    "title": "How to Science [Part 2: Our Universe = Math?]",
+    "description": "pdf for this video: http://www.welchlabs.com/guides\n\nsupport welch labs: https://www.patreon.com/welchlabs\n\nmusic:\nhttps://www.premiumbeat.com/royalty_free_music/songs/storytelling-piano\nhttps://www.premiumbeat.com/royalty_free_music/songs/dark-eyes-gypsy-jazz\nhttps://www.premiumbeat.com/royalty_free_music/songs/truth-to-tell",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-09-25T22:00:26Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/I7rlzkU7zbk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmQzbUhmcWQwVlpZ",
+    "title": "How to Science [Part 1: Music]",
+    "description": "pdf: \nhttp://www.welchlabs.com/guides\n\nmusic: https://www.premiumbeat.com/royalty_free_music/songs/storytelling-piano\n\npatreon:\nhttps://www.patreon.com/welchlabs\n\ncorrection:\nlength table should be in cm, to mm!",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-09-09T13:47:49Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/d3mHfqd0VZY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmdaUHk3T3hBalJN",
+    "title": "Channel Update [April 2017]",
+    "description": "Help me make more videos: https://www.patreon.com/welchlabs\n\nYouTube channels referenced: MinutePhysics, Veritaseum, VSauce, Physics Girl, CGP Grey, Mathologer, 3Blue1Brown, and Numberphile.\n\nA special thanks to Charles Young for all his fantastic help with the motion rig. Thanks to Joan and Alison Young for cutting out an absolutely amazing ransom note.\n\nMusic: https://www.premiumbeat.com/royalty_free_music/songs/yours-faithfully\nhttps://www.premiumbeat.com/royalty_free_music/songs/it-s-always-funny-in-philadelphia",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-04-29T18:07:08Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/gZPy7OxAjRM/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkZNQ1kzU1hURUxF",
+    "title": "Learning To See [Part 15: Information]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-04-15T22:16:17Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/FMCY3SXTELE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnRQSEltcjJzRkJN",
+    "title": "Learning To See [Part 14: Better Heuristics]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-04-01T21:03:06Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/tPHImr2sFBM/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lmdfc0E4aFlVM2I4",
+    "title": "Learning To See [Part 13: Heuristics]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-03-18T16:04:51Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/g_sA8hYU3b8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LktnOFdfcThwSGlr",
+    "title": "Learning To See [Part 12: Let's Get Greedy]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-03-04T17:09:02Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/Kg8W_q8pHik/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmJpeTJ5VTNBdWM0",
+    "title": "Learning to See [Part 11: Haystacks on Haystacks]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-02-18T16:13:05Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/biy2yU3Auc4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjZjdlBqOWRtWVRv",
+    "title": "Learning to See [Part 10: World Domination]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-02-04T13:22:30Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/6cvPj9dmYTo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnlMd1pFdXliYXFF",
+    "title": "Learning To See [Part 9: Bias Variance Throwdown]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-01-21T13:09:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/yLwZEuybaqE/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlVWd3dZWk1Gb2Nn",
+    "title": "Learning to See [Part 8: More Assumptions...Fewer Problems?]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2017-01-07T17:50:23Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UVwwYZMFocg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmtsV1VPTzRzSGFB",
+    "title": "Learning to See [Part 7: There is no f]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-12-24T14:45:48Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/klWUOO4sHaA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lkd1ZlFZa01rZHB3",
+    "title": "Learning To See [Part 6: It's Definitely Time to Play with Legos]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-12-10T15:55:00Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/GufQYkMkdpw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmVmUjh5Ykc3SWhz",
+    "title": "Learning to See [Part 5: To Learn is to Generalize]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-11-26T13:08:54Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/efR8ybG7Ihs/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnNhclZ3LWlWV2dj",
+    "title": "Learning to See [Part 4: Machine Learning]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-11-12T14:58:52Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/sarVw-iVWgc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjBjUlhhT1JiSUZB",
+    "title": "Learning To See [Part 3: Now I R1]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-10-28T13:08:48Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/0cRXaORbIFA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjJaaFFrRDFRS0Z3",
+    "title": "Learning To See [Part 2: Rules on Rules on Rules]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\n\nCode available soon.\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-10-15T15:00:46Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/2ZhQkD1QKFw/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjRNbVNackFscUtj",
+    "title": "Imaginary Numbers Are Real [Part 13: Riemann Surfaces]",
+    "description": "Want to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.\n\nSupporting Code: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nSpecial thanks to the fantastic Charles Jackson Young for helping me get the motion rig done in time for this video. You Rock!\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-09-03T14:26:57Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/4MmSZrAlqKc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkRwVW1yS09RaEFN",
+    "title": "Imaginary Numbers Are Real [Part 12: Riemann's Solution]",
+    "description": "Want to experiment with Riemann's idea yourself? You can download your very own copy of of the final w-planes to experiment with here: http://www.welchlabs.com/blog/2016/6/30/imaginary-numbers-are-real-part-12-riemanns-solution\n\nSupporting Code: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-07-01T11:36:55Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/DpUmrKOQhAM/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjBoaVdiZGM4UUVr",
+    "title": "Imaginary Numbers Are Real [Part 11: Wandering in 4 Dimensions]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nSupporting Code: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-06-17T13:35:07Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/0hiWbdc8QEk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnBOcDhRZjIwLXNB",
+    "title": "Imaginary Numbers Are Real [Part 10: Complex Functions]",
+    "description": "Supporting Code: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real\n\nMore information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-06-03T13:47:09Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/pNp8Qf20-sA/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lmk4RDkwRGtDTGhJ",
+    "title": "Learning To See [Part 1: Introduction]",
+    "description": "In this series, we'll explore the complex landscape of machine learning and artificial intelligence through one example from the field of computer vision: using a decision tree to count the number of fingers in an image. It's gonna be crazy. \n\nBecome a Patron for exclusive perks: https://www.patreon.com/welchlabs\n\nSupporting Code: https://github.com/stephencwelch/LearningToSee\n\nwelchlabs.com\n@welchlabs",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2016-04-15T15:42:49Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/i8D90DkCLhI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmRMbjVINjlsUzB3",
+    "title": "Imaginary Numbers Are Real [Part 9: Closure]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-11-06T18:05:36Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/dLn5H69lS0w/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmllY1VMOF9PeHJV",
+    "title": "Imaginary Numbers Are Real [Part 8: Math Wizardry]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-10-23T11:25:33Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/iecUL8_OxrU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LllIdlI4c2lJaUQw",
+    "title": "Imaginary Numbers Are Real [Part 7: Complex Multiplication]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-10-09T15:56:01Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/YHvR8siIiD0/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lno1SUdfNl96UERv",
+    "title": "Imaginary Numbers Are Real [Part 6: The Complex Plane]",
+    "description": "For full problem statement, check out:\nhttp://www.welchlabs.com/blog/2015/10/2/imaginary-numbers-are-real-part-6-the-complex-plane\n\nMore information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-10-02T15:33:53Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/z5IG_6_zPDo/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjY1d1lteThQZi1Z",
+    "title": "Imaginary Numbers Are Real [Part 5: Numbers are Two Dimensional]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nExplosion elements by BlinkFarm, available for free at http://www.youtube.com/blinkfarm\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-09-25T12:31:54Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/65wYmy8Pf-Y/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkRUaEFvVDNxMlY0",
+    "title": "Imaginary Numbers Are Real [Part 4: Bombelli's Solution]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-09-18T11:43:47Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/DThAoT3q2V4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lk45UU9McmZjS05j",
+    "title": "Imaginary Numbers Are Real [Part 3: Cardan's Problem]",
+    "description": "More information and resources: http://www.welchlabs.com\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-09-11T15:21:15Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/N9QOLrfcKNc/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjJIclNHMGZkeExZ",
+    "title": "Imaginary Numbers Are Real [Part 2: A Little History]",
+    "description": "Want to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nPart 2 especially owes a debt to Paul Nahin's excellent book: An Imaginary Tale: The Story of sqrt(-1). Nahin presents a very thorough account of the development of imaginary numbers, which was invaluable in creating this series.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-09-04T20:26:50Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/2HrSG0fdxLY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlQ2NDdDR3N1T1ZV",
+    "title": "Imaginary Numbers Are Real [Part 1: Introduction]",
+    "description": "For early access to new videos and other perks: \nhttps://www.patreon.com/welchlabs\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.\n\nImaginary numbers are not some wild invention, they are the deep and natural result of extending our number system. Imaginary numbers are all about the discovery of numbers existing not in one dimension along the number line, but in full two dimensional space.  Accepting this not only gives us more rich and complete mathematics, but also unlocks a ridiculous amount of very real, very tangible problems in science and engineering. \n\nPart 1: Introduction\nPart 2: A Little History\nPart 3: Cardan's Problem\nPart 4: Bombelli's Solution\nPart 5: Numbers are Two Dimensional\nPart 6: The Complex Plane\nPart 7: Complex Multiplication\nPart 8: Math Wizardry\nPart 9: Closure\nPart 10: Complex Functions\nPart 11: Wandering in Four Dimensions\nPart 12: Riemann's Solution\nPart 13: Riemann Surfaces\n\nThanks to viewer \"David O\" for this correction: \nThe claim that Euler didn’t know what to do with negative numbers, or thought they were greater than infinity, is a misinterpretation of his On Divergent Series paper. Euler argued that, for infinite series, the word “sum” should mean the original finite expression from which the series originates. For example, applying the geometric series formula \"1/(1–r) = 1 + r + r^2 + r^3 + …\" with r = 2 gives the formal result \"–1 = 1 + 2 + 4 + 8 + …”. However, he did not mean that negative numbers themselves are infinite, nor that such “sums” are equal in the ordinary arithmetic sense for divergent series.\nSource: Paragraphs 1-12 of https://arxiv.org/pdf/1808.02841\n\n\n\nWant to learn more or teach this series? Check out the Imaginary Numbers are Real Workbook: http://www.welchlabs.com/resources.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-08-28T13:56:12Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/T647CGsuOVU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Llp6VnBUOHc4SUxV",
+    "title": "Waffles And Harmonic Motion [Part II]",
+    "description": "In this two part series, we dig into understanding and quantifying simple harmonic motion (SHM). We try to figure our why systems that oscillate move the way they do, and what ideas from physics govern this motion. \n\nI have unapologetically stolen much of my approach from Richard Feynman's wonderful physics lectures: http://www.feynmanlectures.caltech.edu/I_toc.html. The approach presented here was largely borrowed from Feynman chapters 9 and 21. I encourage anyone interesting in going to deeper to read Feynman's lectures. \n\nSupporting code: https://github.com/stephencwelch/Acoustics-To-Deep-Learning/blob/master/Waffles%20And%20Harmonic%20Motion%20%5BPart%20II%5D.ipynb\n\nFor more, see www.welchlabs.com/blog",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-05-15T11:05:07Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/ZzVpT8w8ILU/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3Lm5LYXZCbDFFV2lJ",
+    "title": "Waffles And Harmonic Motion [Part 1]",
+    "description": "In this two part series, we dig into understanding and quantifying simple harmonic motion (SHM). We try to figure our why oscillating systems that move the way they do, and what ideas from physics govern this motion. \n\nI have unapologetically stolen much of my approach from Richard Feynman's wonderful physics lectures: http://www.feynmanlectures.caltech.edu/I_toc.html. The approach presented here was largely borrowed from Feynman chapters 9 and 21. I encourage anyone interesting in going to deeper to read Feynman's lectures. \n\nSupporting code: http://nbviewer.ipython.org/github/stephencwelch/Acoustics-To-Deep-Learning/blob/master/Waffles%20and%20Harmonic%20Motion%20%5BPart%20I%5D.ipynb\n\nIt can be forked on github: https://github.com/stephencwelch/Acoustics-To-Deep-Learning\n\nFor more on this, see www.welchlabs.com/blog\n\n@stephencwelch",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-05-01T12:30:45Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/nKavBl1EWiI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkYtdXc4UEtEMGRJ",
+    "title": "How To Break Sound [Part 1]",
+    "description": "In this video we conduct a simple experiment and find some surprising results. \n\nSupporting Code: \nhttp://nbviewer.ipython.org/github/stephencwelch/Acoustics-To-Deep-Learning/blob/master/How%20to%20Break%20Sound.ipynb\n\n@stephencwelch\nwww.welchlabs.com/blog",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-03-20T20:32:09Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/F-uw8PKD0dI/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjNIR0VNYWlOTVFZ",
+    "title": "Acoustics to Deep Learning",
+    "description": "Introduction to series on sound, acoustics, signal processing, perception, and deep learning. \n\nLink to Supporting Code: http://nbviewer.ipython.org/github/stephencwelch/Acoustics-To-Deep-Learning/blob/master/Acoustics%20To%20Deep%20Learning.ipynb\n\n\"Favorite Song\": Mordecai by the incredible Between the Buried and Me\n\nSpecial thanks to my wonderful Fiancee for recording her part even though she didn't want to. \n\nMore at www.welchlabs.com/blog\n@stephencwelch\n\nErrata: Samples and Voltage are backwards on my plot at 1:08, Samples should be x-axis, y-axis should be voltage.",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-02-27T21:15:39Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/3HGEMaiNMQY/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlM0WlV3Z2VzalM4",
+    "title": "Neural Networks Demystified [Part 7: Overfitting, Testing, and Regularization]",
+    "description": "We've built and trained our neural network, but before we celebrate, we must be sure that our model is representative of the real world. \n\nSupporting Code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nNate Silver's Book: http://www.amazon.com/Signal-Noise-Many-Predictions-Fail/dp/159420411X/ref=sr_1_1?ie=UTF8&qid=1421442340&sr=8-1&keywords=signal+and+the+noise\n\nCaltech Machine Learning Course: https://work.caltech.edu/telecourse.html\n\nAnd the lecture shown: http://youtu.be/Dc0sr0kdBVI?t=56m52s\n\nIn this series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization\n\n@stephencwelch\nwelchlabs.com",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-01-16T21:07:26Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/S4ZUwgesjS8/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjlLTTlUZDZSVmdR",
+    "title": "Neural Networks Demystified [Part 6: Training]",
+    "description": "After all that work it's finally time to train our Neural Network. We'll use the BFGS numerical optimization algorithm and have a look at the results.  \n\nSupporting Code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nYann Lecun's Efficient BackProp Paper: http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf\n\nMore on BFGS:\nhttp://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm\n\nIn this series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization\n\nFollow me on Twitter for updates:\n@stephencwelch",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2015-01-02T14:44:27Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/9KM9Td6RVgQ/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LnBITXpOVzhBZ3E0",
+    "title": "Neural Networks Demystified [Part 5: Numerical Gradient Checking]",
+    "description": "When building complex systems like neural networks, checking portions of your work can save hours of headache. Here we'll check our gradient computations. \n\nSupporting code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nLink to excellent Stanford tutorial: http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial\n\nIn this series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization\n   \n@stephencwelch",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2014-12-19T16:01:28Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/pHMzNW8Agq4/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LkdsY254VWxydGVr",
+    "title": "Neural Networks Demystified [Part 4: Backpropagation]",
+    "description": "Backpropagation as simple as possible, but no simpler. Perhaps the most misunderstood part of neural networks, Backpropagation of errors is the key step that allows ANNs to learn. In this video, I give the derivation and thought processes behind backpropagation using high school level calculus. \n\nSupporting Code and Equations: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nIn this series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization\n   \n@stephencwelch",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2014-12-05T21:19:24Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/GlcnxUlrtek/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LjV1MGphQTNxQUdr",
+    "title": "Neural Networks Demystified [Part 3: Gradient Descent]",
+    "description": "Neural Networks Demystified\n@stephencwelch\n\nSupporting Code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nLink to Yann's Talk:\nhttp://videolectures.net/eml07_lecun_wia/\n\nIn this short series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2014-11-21T13:24:26Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/5u0jaA3qAGk/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LlVKd0s2akFTdG1n",
+    "title": "Neural Networks Demystified [Part 2: Forward Propagation]",
+    "description": "Neural Networks Demystified\n@stephencwelch\n\nSupporting Code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nIn this short series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2014-11-07T13:31:50Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/UJwK6jAStmg/mqdefault.jpg"
+  },
+  {
+    "video_id": "VVVvblZmeFhvZGc3OFR6aDVuTnU4NUV3LmJ4ZTJULVY4WFJz",
+    "title": "Neural Networks Demystified [Part 1: Data and Architecture]",
+    "description": "Neural Networks Demystified\nPart 1: Data and Architecture\n@stephencwelch\n\nSupporting Code: \nhttps://github.com/stephencwelch/Neural-Networks-Demystified\n\nIn this short series, we will build and train a complete Artificial Neural Network in python. New videos every other friday. \n\nPart 1: Data + Architecture\nPart 2: Forward Propagation\nPart 3: Gradient Descent\nPart 4: Backpropagation\nPart 5: Numerical Gradient Checking\nPart 6: Training\nPart 7: Overfitting, Testing, and Regularization",
+    "channel_id": "UConVfxXodg78Tzh5nNu85Ew",
+    "channel_title": "Welch Labs",
+    "published_at": "2014-11-04T12:22:43Z",
+    "thumbnail_url": "https://i.ytimg.com/vi/bxe2T-V8XRs/mqdefault.jpg"
+  }
+]
