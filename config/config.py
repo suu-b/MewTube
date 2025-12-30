@@ -15,6 +15,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = PROJECT_ROOT / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+# Table names
+CHANNEL_TABLE = "channels"
+VIDEO_TABLE = "videos"
+
 # Shared Logger
 logger = logging.getLogger(APP_NAME)
 logger.setLevel(LOGGING_LEVEL)

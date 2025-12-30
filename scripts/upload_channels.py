@@ -1,7 +1,7 @@
 import os
 import json
 from models.channel import Channel
-from config.config import OUTPUT_DIR, logger
+from config.config import CHANNEL_TABLE, OUTPUT_DIR, logger
 from dotenv import load_dotenv
 from supabase import create_client
 
@@ -14,7 +14,6 @@ layer3 = OUTPUT_DIR / "layer3.jsonl"
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 
-TABLE = "channels"
 BATCH_SIZE = 500
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -34,7 +33,7 @@ def push_to_supabase(layer, channel_score):
     for i in range(0, len(channels), BATCH_SIZE):
         batch = [c.model_dump() for c in channels[i:i+BATCH_SIZE]]
         try:
-            res = supabase.table(TABLE).insert(batch).execute()
+            res = supabase.table(CHANNEL_TABLE).insert(batch).execute()
             logger.info("Inserted batch %d-%d: %d rows", i+1, i+len(batch), len(res.data or []))
         except Exception as e:
             logger.error("Failed to insert batch %d-%d: %s", i+1, i+len(batch), e)
