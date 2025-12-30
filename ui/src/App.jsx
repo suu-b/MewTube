@@ -2,35 +2,23 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <div className="py-5 text-center">
-        <div className="flex justify-between gap-2 p-3">
-          <h1 className="bg-purple-700 font-bold text-white px-5 py-3">
-            MewTube
-          </h1>
-          <div className="flex w-full w-full items-center gap-2">
-            <input type="text" placeholder="Email" className="w-full" />
-            <button type="submit" variant="outline">
-              Search
-            </button>
-          </div>
-        </div>
+    <section
+      id="home"
+      className="h-full w-full flex justify-between items-center text-[#1c1c1c] px-10 py-5"
+    >
+      <div className="flex justify-center flex-col max-w-[40%]">
+        <img src="/banner-title.png" alt="" className="w-[60%]" />
+        <p className="w-[80%] text-left">
+          MewTube is a portal into my becoming. It comprises all the projects I
+          am currently undertaking. It is connected to my personal site to track
+          my ongoing projects.
+        </p>
+        <button className="cursor-pointer bg-[#1c1c1c] text-white rounded-lg w-fit px-5 py-2 mt-5">
+          Dashboard
+        </button>
       </div>
-      <div className="relative h-[45vh]">
-        <img src="/assets/banner.jpg" className="w-full h-full object-cover" />
-        Search
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex items-center px-12">
-          <div>
-            <img src="/assets/mew.gif" className="w-28 mb-6" />
-            <h2 className="text-5xl font-bold text-slate-200">MewTube</h2>
-            <p className="text-xl text-slate-200">
-              Intriguing content, from your interests
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <img src="/banner.png" alt="banner" className="w-[60%]" />
+    </section>
   );
 }
 
