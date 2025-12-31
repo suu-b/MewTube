@@ -1,0 +1,13 @@
+@keyframes slow-roll {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dice-roll {
+    animation: slow-roll 5s linear infinite;
+}
