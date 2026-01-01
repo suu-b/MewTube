@@ -2,6 +2,7 @@ import logging
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+from decimal import Decimal
 
 load_dotenv()
 
@@ -18,6 +19,10 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 # Table names
 CHANNEL_TABLE = "channels"
 VIDEO_TABLE = "videos"
+
+# Weights
+SIMILARITY_WEIGHT = Decimal("0.7")
+CHANNEL_WEIGHT = Decimal("0.2")
 
 # Shared Logger
 logger = logging.getLogger(APP_NAME)
